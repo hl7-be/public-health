@@ -8,8 +8,8 @@ For analysis purposes in search of the perfect implementation for Bevolkingsonde
 ## Publication
 This ImplementationGuide is published in the following locations:
 
-Continuous Build: __https://svendhaens.github.io/bevolkingsonderzoek/index.html__  
-Canonical / permanent URL: https://www.ehealth.fgov.be/standards/fhir
+Continuous Build: __https://build.fhir.org/ig/hl7-be/public-health__  
+Canonical / permanent URL: https://www.ehealth.fgov.be/standards/fhir/public-health
 <br> </br>
 
 ## First Steps - How to use contribute
@@ -24,7 +24,7 @@ Read/ install the following:
 ## Issues
 Issues and change requests are managed here:  
 
-Issues:  __https://github.com/<handle>/<repo>/issues__  
-Kanban board:  __https://github.com/<handle>/<repo>/projects/1__  
+Issues:  __https://github.com/hl7-be/public-health/issues__  
+Kanban board:  __https://github.com/hl7-be/public-health/projects/1__  
 
 ### References

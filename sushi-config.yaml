@@ -7,16 +7,16 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 
 
-id: my-ig
-canonical: http://example.com/fhir/example
-url: http://example.com/fhir/example/ImplementationGuide/my-ig
-name: ExampleIG
-title: "HL7 FHIR Implementation Guide: Example IG Release 1 - US Realm | STU1"
-description: Example IG exercises many of the fields in a SUSHI configuration.
-status: active
+id: hl7.fhir.be.public-health
+canonical: https://www.ehealth.fgov.be/standards/fhir/public-health
+url: https://www.ehealth.fgov.be/standards/fhir/public-health
+name: Public Health
+title: "HL7 FHIR Implementation Guide: Public Health IG Release 1 - BE Realm | STU1"
+description: Public Health
+status: draft
 license: CC0-1.0
-date: 2020-02-26
-version: 1.0.0
+date: 2022-10-07
+version: 0.0.1
 
 # Although fhirVersions is 0..* in the ImplementationGuide resource
 # it can be a single item OR and array here (but so far SUSHI only
@@ -37,23 +37,23 @@ releaseLabel: STU1
 # as IG.publisher.  The contact details and/or additional publishers
 # will be translated into IG.contact values.
 publisher:
-  name: My Organization 
-  url: http://example.com/committees
-  email: my-group@example.com
+  name: eHealth Platform
+  url: https://www.ehealth.fgov.be/standards/fhir
+  email: support@be-ehealth-standards.atlassian.net
 
 # ContactDetail is required by the template.
 contact:
-  - name: Bob Smith
+  - name: eHealth Platform
     telecom:
       - system: email
-        value: bobsmith@example.com
+        value: support@be-ehealth-standards.atlassian.net
         use: work
 
 # The jurisdiction can be a single item or a list. The FHIR Shorthand
 # code syntax can be used here.
 
-#jurisdiction: urn:iso:std:iso:3166#US "United States of America"
-jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
+jurisdiction: urn:iso:std:iso:3166#BE "Belgium"
+#jurisdiction: http://unstats.un.org/unsd/methods/m49/m49.htm#001 "World"
 
 
 # The dependencies property corresponds to IG.dependsOn. The key is the
@@ -134,6 +134,7 @@ pages:
   guidance.md:
   changes.xml:
   downloads.xml:
+  
 # The ImplementationGuide resource defines several other properties
 # not represented above. These properties can be used as-is and
 # should follow the format defined in ImplementationGuide:
@@ -164,7 +165,7 @@ menu:
     Value Sets: artifacts.html#4
   Downloads: downloads.html
   Changes: changes.html
-  History: ../history.html
+  History: https://www.ehealth.fgov.be/standards/fhir/allergy/history.html
 
 # The parameters property represents IG.definition.parameter. Rather
 # than a list of code/value pairs (as in the ImplementationGuide
@@ -184,3 +185,13 @@ FSHOnly: false
 # When set to true, the "short" and "definition" field on the root element of an Extension will
 # be set to the "Title" and "Description" of that Extension. Default is true.
 #applyExtensionMetadataToRoot: false
+
+dependencies: 
+  hl7.fhir.be.core: 2.0.1
+
+parameters:
+  shownav: 'true'
+  apply-contact: 'true'
+  apply-jurisdiction: 'true'
+  apply-publisher: 'true'
+  apply-version: 'true'

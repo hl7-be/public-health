@@ -6,6 +6,7 @@ This IG contains the Belgian profiles for Public Health related stuff such as Po
 ### Publication
 This ImplementationGuide is published in the following locations:
 
+
 Continuous Build: __http://build.fhir.org/ig/hl7-be/public-health/branches/master/index.html__  
 Canonical / permanent URL: 
 <br> </br>

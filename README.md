@@ -1,9 +1,9 @@
-Bevolkingsonderzoek IG
+PopulationScreening IG
 ---
 
 ###
 # General
-For analysis purposes in search of the perfect implementation for Bevolkingsonderzoeken
+For analysis purposes in search of the perfect implementation for PopulationScreeningen
 
 ## Publication
 This ImplementationGuide is published in the following locations:

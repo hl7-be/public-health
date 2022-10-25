@@ -1,13 +1,13 @@
-Profile: BeBvoAppointment
+Profile: BePopulationScreeningAppointment
 Parent: Appointment
-Id: be-bvo-appointment
-Title: "Be Bvo Appointment"
-Description: "Appointment for bevolkingsonderzoek"
+Id: be-populationscreening-appointment
+Title: "Be PopulationScreening Appointment"
+Description: "Appointment for populationscreening"
 * ^status = #draft
-* extension contains BeBvoEpisodeOfCare named Episode 1..1 MS
+* extension contains BePopulationScreeningEpisodeOfCare named Episode 1..1 MS
 
 Instance: BreastCancerScreeningAppointment
-InstanceOf: BeBvoAppointment
+InstanceOf: BePopulationScreeningAppointment
 Usage: #example
 Title: "Appointment Breast Cancer Screening"
 Description: "Appointment for mammography in a mammographic unit in context of breast cancer screening"
@@ -18,12 +18,12 @@ Description: "Appointment for mammography in a mammographic unit in context of b
 * participant[=].status = #tentative
 * participant[+].actor = Reference(mammographicUnit)
 * participant[=].status = #accepted
-* extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/BeBvoEpisodeOfCare"
-* extension.valueReference = Reference(exampleEpisodeBevolkingsonderzoek)
+* extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/BePopulationScreeningEpisodeOfCare"
+* extension.valueReference = Reference(exampleEpisodePopulationScreening)
 * contained[0] = mammographicUnit
 
 Instance: ColonCancerScreeningAppointment
-InstanceOf: BeBvoAppointment
+InstanceOf: BePopulationScreeningAppointment
 Usage: #example
 Title: "Appointment Colon Cancer Screening"
 Description: "Appointment for stool sample in context of colon cancer screening"
@@ -32,12 +32,12 @@ Description: "Appointment for stool sample in context of colon cancer screening"
 * end = "2022-03-15T23:59:00.000+02:00"
 * participant[0].actor = Reference(JaneDoe)
 * participant[=].status = #tentative
-* extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/BeBvoEpisodeOfCare"
-* extension.valueReference = Reference(exampleEpisodeBevolkingsonderzoek)
+* extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/BePopulationScreeningEpisodeOfCare"
+* extension.valueReference = Reference(exampleEpisodePopulationScreening)
 
 
 Instance: CervicalCancerScreeningAppointment
-InstanceOf: BeBvoAppointment
+InstanceOf: BePopulationScreeningAppointment
 Usage: #example
 Title: "Appointment Cervical Cancer Screening"
 Description: "Proposed appointment in context of cervical cancer screening"
@@ -46,5 +46,5 @@ Description: "Proposed appointment in context of cervical cancer screening"
 * end = "2022-03-15T23:59:00.000+02:00"
 * participant[0].actor = Reference(JaneDoe)
 * participant[=].status = #tentative
-* extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/BeBvoEpisodeOfCare"
-* extension.valueReference = Reference(exampleEpisodeBevolkingsonderzoek)
+* extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/BePopulationScreeningEpisodeOfCare"
+* extension.valueReference = Reference(exampleEpisodePopulationScreening)

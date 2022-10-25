@@ -1,27 +1,27 @@
 Profile:        BePopulationBasedScreeningEpisodeOfCare
 Parent:         EpisodeOfCare
-Id:             Be-Bvo-EpisodeOfCare
-Title:          "BE Episode Bevolkingsonderzoek"
+Id:             Be-PopulationScreening-EpisodeOfCare
+Title:          "BE Episode PopulationScreening"
 Description:    "Manages a recurring periodical workflow for diagnostics in regard to a specific Condition."
 * ^status = #draft
 * patient only Reference(BePatient)
 * patient 1..1
-* type from BevolkingsonderzoekScreeningVS (extensible) 
-// * extension contains BvoConditionCode named Condition 0..1 MS
-* extension contains BvoNextInvitationIndicationDate named nextInvitationDate 0..1
-* extension contains BvoNextInvitationIndication named nextInvitationIndication 1..1
+* type from PopulationScreeningScreeningVS (extensible) 
+// * extension contains PopulationScreeningConditionCode named Condition 0..1 MS
+* extension contains PopulationScreeningNextInvitationIndicationDate named nextInvitationDate 0..1
+* extension contains PopulationScreeningNextInvitationIndication named nextInvitationIndication 1..1
 
-Extension: BvoNextInvitationIndicationDate
+Extension: PopulationScreeningNextInvitationIndicationDate
 Description: "The estimated date on which to expect the next invitation"
 * ^status = #draft
 * value[x] only date
 
-Extension: BvoNextInvitationIndication
+Extension: PopulationScreeningNextInvitationIndication
 Description: "This is variable text giving an estimate when the next screening is scheduled, if there is any and why."
 * ^status = #draft
 * value[x] only string
 
-Extension: BeBvoEpisodeOfCare
+Extension: BePopulationScreeningEpisodeOfCare
 //Parent: workflow-episodeOfCare
 Description: "A periodic episode for a population based screening"
 * ^status = #draft
@@ -40,20 +40,20 @@ Description: "Internal id for identification of resource with cvko"
 * uniqueId[=].value = "https://www.ehealth.fgov.be/standards/fhir/public-health/NamingSystem/cvkoId"
 * uniqueId[=].preferred = true
 
-// Extension: BvoConditionCode
+// Extension: PopulationScreeningConditionCode
 // Description: "The certainty of diagnosis"
 // * ^status = #draft
 // * value[x] only CodeableConcept
-// * value[x] from BvoConditionCodeVS (extensible)
+// * value[x] from PopulationScreeningConditionCodeVS (extensible)
 
-// ValueSet: BvoConditionCodeVS
+// ValueSet: PopulationScreeningConditionCodeVS
 // Description: "Values of possible Conditions ofr wich to perform diagnostics"
 // * ^status = #draft
 // * $sct#4473006 "Migraine with aura"
 
 Alias: $sct = http://snomed.info/sct
 
-Instance: exampleEpisodeBevolkingsonderzoek
+Instance: exampleEpisodePopulationScreening
 InstanceOf: BePopulationBasedScreeningEpisodeOfCare
 Usage: #example
 * status = #active
@@ -64,7 +64,7 @@ Usage: #example
 * period.start = "2014-09-01"
 * type = $sct#762444001
 * type.text = "Dikkedarmkanker"
-* extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/BvoNextInvitationIndication"
+* extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/PopulationScreeningNextInvitationIndication"
 * extension.valueString = "De datum van volgende uitnodiging is afhankelijk van de uitslag van het verdere onderzoek."
 
 
@@ -84,10 +84,10 @@ Usage: #example
 * alias = "CvKO"
 
 
-ValueSet: BevolkingsonderzoekScreeningVS
-Id: bevolkingsonderzoek-screening-vs
-Title: "Bevolkingsonderzoek Screening VS"
-Description: "Bevolkingsonderzoek screening types"
+ValueSet: PopulationScreeningScreeningVS
+Id: populationscreening-screening-vs
+Title: "PopulationScreening Screening VS"
+Description: "PopulationScreening screening types"
 * ^status = #draft
 * $sct#268547008 "Borstkanker"
 * $sct#762444001 "Dikkedarmkanker"

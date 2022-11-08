@@ -1,6 +1,8 @@
-PopulationScreening IG
----
 
+Public Health
+---
+This IG contains the Belgian profiles for Public Health related stuff such as Population Screening...
+<br> </br>
 ###
 # General
 For analysis purposes in search of the perfect implementation for PopulationScreeningen
@@ -8,8 +10,8 @@ For analysis purposes in search of the perfect implementation for PopulationScre
 ## Publication
 This ImplementationGuide is published in the following locations:
 
-Continuous Build: __https://build.fhir.org/ig/hl7-be/public-health__  
-Canonical / permanent URL: https://www.ehealth.fgov.be/standards/fhir/public-health
+Continuous Build: __http://build.fhir.org/ig/hl7-be/public-health/branches/master/index.html__  
+Canonical / permanent URL: 
 <br> </br>
 
 ## First Steps - How to use contribute

@@ -7,7 +7,6 @@ Description:    "Manages a recurring periodical workflow for diagnostics in rega
 * patient only Reference(BePatient)
 * patient 1..1
 * type from PopulationScreeningScreeningVS (extensible) 
-// * extension contains PopulationScreeningConditionCode named Condition 0..1 MS
 * extension contains PopulationScreeningNextInvitationIndicationDate named nextInvitationDate 0..1
 * extension contains PopulationScreeningNextInvitationIndication named nextInvitationIndication 1..1
 
@@ -39,17 +38,6 @@ Description: "Internal id for identification of resource with cvko"
 * uniqueId[0].type = #uri
 * uniqueId[=].value = "https://www.ehealth.fgov.be/standards/fhir/public-health/NamingSystem/cvkoId"
 * uniqueId[=].preferred = true
-
-// Extension: PopulationScreeningConditionCode
-// Description: "The certainty of diagnosis"
-// * ^status = #draft
-// * value[x] only CodeableConcept
-// * value[x] from PopulationScreeningConditionCodeVS (extensible)
-
-// ValueSet: PopulationScreeningConditionCodeVS
-// Description: "Values of possible Conditions ofr wich to perform diagnostics"
-// * ^status = #draft
-// * $sct#4473006 "Migraine with aura"
 
 Alias: $sct = http://snomed.info/sct
 

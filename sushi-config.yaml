@@ -187,7 +187,7 @@ FSHOnly: false
 #applyExtensionMetadataToRoot: false
 
 dependencies: 
-  hl7.fhir.be.core: 2.0.1
+  hl7.fhir.be.core: dev
 
 parameters:
   shownav: 'true'

@@ -1,14 +1,5 @@
-Profile: BeLocation
-Parent: Location
-Id: be-location
-Title: "Be Location"
-Description: "Location with BE address"
-* ^status = #draft
-* address only BeAddress
-
 Instance: mammographicUnit
 InstanceOf: BeLocation
-Usage: #inline
 Title: "Mammographic Unit"
 Description: "Location of a mammographic unit"
 * name = "Mammografic unit example name"

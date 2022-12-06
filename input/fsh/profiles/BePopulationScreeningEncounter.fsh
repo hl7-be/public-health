@@ -51,5 +51,6 @@ ValueSet: BePopulationScreeningResultVS
 Id: be-populationscreening-result-vs
 Title: "Be PopulationScreening Result VS"
 Description: "Result"
+* ^experimental = false
 * $sct#280415008 "afwijkend"
 * $sct#280413001 "niet afwijkend"

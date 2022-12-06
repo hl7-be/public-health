@@ -16,8 +16,10 @@ If the screening was negative, the follow up examination should not be performed
 * extension contains BePopulationScreeningEpisodeOfCare named Episode 1..1 MS
 
 ValueSet: BeVSPopulationScreeningFollowUpAdvice
+Title: "BeVSPopulationScreeningFollowUpAdvice"
 Description: "Possible follow up actions"
 * ^status = #draft
+* ^experimental = false
 * http://snomed.info/sct#73761001 "Colonoscopy"
 
 ValueSet: BeVSPopulationScreeningBodySiteLocation
@@ -25,6 +27,7 @@ Id: be-vspopulationscreening-body-site-location
 Title: "Be VS PopulationScreening Body Site Location"
 Description: "Location on body"
 * ^status = #draft
+* ^experimental = false
 * http://snomed.info/sct#14742008 "Dikke darm"
 
 Instance: ColorectalCancerScreeningFollowUpExample

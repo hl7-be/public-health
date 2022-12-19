@@ -77,6 +77,7 @@ Id: populationscreening-screening-vs
 Title: "PopulationScreening Screening VS"
 Description: "PopulationScreening screening types"
 * ^status = #draft
+* experimental = false
 * $sct#268547008 "Borstkanker"
 * $sct#762444001 "Dikkedarmkanker"
 * $sct#171149006 "Baarmoederhalskanker"

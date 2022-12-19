@@ -78,6 +78,6 @@ Title: "PopulationScreening Screening VS"
 Description: "PopulationScreening screening types"
 * ^status = #draft
 * ^experimental = false
-* $sct#268547008 "Borstkanker"
-* $sct#762444001 "Dikkedarmkanker"
+* $sct#268547008 "Screening for malignant neoplasm of breast (procedure)"
+* $sct#275978004 "Screening for malignant neoplasm of colon" // 268548003 ??
 * $sct#171149006 "Baarmoederhalskanker"

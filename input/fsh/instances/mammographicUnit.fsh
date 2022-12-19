@@ -1,5 +1,5 @@
 Instance: mammographicUnit
-InstanceOf: BeLocation
+InstanceOf: Location
 Title: "Mammographic Unit"
 Description: "Location of a mammographic unit"
 * name = "Mammografic unit example name"

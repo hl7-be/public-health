@@ -2,7 +2,7 @@ Instance: BK-1-no-screening-example-episode
 InstanceOf: BePopulationBasedScreeningEpisodeOfCare
 Usage: #example
 * extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/PopulationScreeningNextInvitationIndication"
-* extension.valueString = "Je ontvangt geen volgende uitnodiging omdat je hebt laten weten dat je geen uitnodiging meer wou ontvangen. Indien je meer informatie wenst over dit onderzoek kan je dit best bespreken met je arts. "
+* extension.valueString = "Je ontvangt geen volgende uitnodiging omdat je hebt laten weten dat je geen uitnodiging meer wou ontvangen. Indien je meer informatie wenst over dit onderzoek kan je dit best bespreken met je arts"
 * identifier.system = "http://example.org/sampleepisodeofcare-identifier"
 * identifier.value = "3237640"
 * status = #active
@@ -18,7 +18,7 @@ Instance: BK-2-invitation-example-episode
 InstanceOf: BePopulationBasedScreeningEpisodeOfCare
 Usage: #example
 * extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/PopulationScreeningNextInvitationIndication"
-* extension.valueString = "De datum van volgende uitnodiging is afhankelijk van de uitslag van het verdere onderzoek. "
+* extension.valueString = "De datum van volgende uitnodiging is afhankelijk van de uitslag van het verdere onderzoek"
 * identifier.system = "http://example.org/sampleepisodeofcare-identifier"
 * identifier.value = "3237641"
 * status = #active

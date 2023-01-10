@@ -1,8 +1,9 @@
 Instance: BK-1-no-screening-example-episode
 InstanceOf: BePopulationBasedScreeningEpisodeOfCare
 Usage: #example
-* extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/PopulationScreeningNextInvitationIndication"
-* extension.valueString = "Je ontvangt geen volgende uitnodiging omdat je hebt laten weten dat je geen uitnodiging meer wou ontvangen. Indien je meer informatie wenst over dit onderzoek kan je dit best bespreken met je arts"
+//* extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/PopulationScreeningNextInvitationIndication"
+//* extension.valueString = "Je ontvangt geen volgende uitnodiging omdat je hebt laten weten dat je geen uitnodiging meer wou ontvangen. Indien je meer informatie wenst over dit onderzoek kan je dit best bespreken met je arts. "
+* extension[nextInvitation].extension[type].valueCodeableConcept = https://www.ehealth.fgov.be/standards/fhir/public-health/CodeSystem/be-cs-populationscreening-next-invitation-type#refusal
 * identifier.system = "http://example.org/sampleepisodeofcare-identifier"
 * identifier.value = "3237640"
 * status = #active
@@ -17,8 +18,9 @@ Usage: #example
 Instance: BK-2-invitation-example-episode
 InstanceOf: BePopulationBasedScreeningEpisodeOfCare
 Usage: #example
-* extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/PopulationScreeningNextInvitationIndication"
-* extension.valueString = "De datum van volgende uitnodiging is afhankelijk van de uitslag van het verdere onderzoek"
+//* extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/PopulationScreeningNextInvitationIndication"
+//* extension.valueString = "De datum van volgende uitnodiging is afhankelijk van de uitslag van het verdere onderzoek. "
+* extension[nextInvitation].extension[type].valueCodeableConcept = https://www.ehealth.fgov.be/standards/fhir/public-health/CodeSystem/be-cs-populationscreening-next-invitation-type#tobedetermined
 * identifier.system = "http://example.org/sampleepisodeofcare-identifier"
 * identifier.value = "3237641"
 * status = #active
@@ -50,8 +52,10 @@ Usage: #example
 Instance: BK-3-invitation-participation-negative-example-episode
 InstanceOf: BePopulationBasedScreeningEpisodeOfCare
 Usage: #example
-* extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/PopulationScreeningNextInvitationIndication"
-* extension.valueString = "De volgende uitnodiging is voorzien rond 24/12/2024."
+//* extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/PopulationScreeningNextInvitationIndication"
+//* extension.valueString = "De volgende uitnodiging is voorzien rond 24/12/2024."
+* extension[nextInvitation].extension[type].valueCodeableConcept = https://www.ehealth.fgov.be/standards/fhir/public-health/CodeSystem/be-cs-populationscreening-next-invitation-type#nextinvitation
+* extension[nextInvitation].extension[date].valueDateTime = "2024-12-24"
 * identifier.system = "http://example.org/sampleepisodeofcare-identifier"
 * identifier.value = "3237642"
 * status = #active
@@ -113,8 +117,10 @@ Usage: #example
 Instance: BK-4-participation-negative-example-episode
 InstanceOf: BePopulationBasedScreeningEpisodeOfCare
 Usage: #example
-* extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/PopulationScreeningNextInvitationIndication"
-* extension.valueString = "De volgende uitnodiging is voorzien rond 24/12/2024."
+//* extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/PopulationScreeningNextInvitationIndication"
+//* extension.valueString = "De volgende uitnodiging is voorzien rond 24/12/2024."
+* extension[nextInvitation].extension[type].valueCodeableConcept = https://www.ehealth.fgov.be/standards/fhir/public-health/CodeSystem/be-cs-populationscreening-next-invitation-type#nextinvitation
+* extension[nextInvitation].extension[date].valueDateTime = "2024-12-24"
 * identifier.system = "http://example.org/sampleepisodeofcare-identifier"
 * identifier.value = "3237643"
 * status = #active
@@ -158,8 +164,10 @@ Usage: #example
 Instance: BK-5-negative-example-episode
 InstanceOf: BePopulationBasedScreeningEpisodeOfCare
 Usage: #example
-* extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/PopulationScreeningNextInvitationIndication"
-* extension.valueString = "De volgende uitnodiging is voorzien rond 24/12/2024."
+//* extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/PopulationScreeningNextInvitationIndication"
+//* extension.valueString = "De volgende uitnodiging is voorzien rond 24/12/2024."
+* extension[nextInvitation].extension[type].valueCodeableConcept = https://www.ehealth.fgov.be/standards/fhir/public-health/CodeSystem/be-cs-populationscreening-next-invitation-type#nextinvitation
+* extension[nextInvitation].extension[date].valueDateTime = "2024-12-24"
 * identifier.system = "http://example.org/sampleepisodeofcare-identifier"
 * identifier.value = "3237644"
 * status = #active
@@ -230,8 +238,10 @@ Usage: #example
 Instance: BK-6-negative-example-episode
 InstanceOf: BePopulationBasedScreeningEpisodeOfCare
 Usage: #example
-* extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/PopulationScreeningNextInvitationIndication"
-* extension.valueString = "De volgende uitnodiging is voorzien rond 24/12/2024."
+//* extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/PopulationScreeningNextInvitationIndication"
+//* extension.valueString = "De volgende uitnodiging is voorzien rond 24/12/2024."
+* extension[nextInvitation].extension[type].valueCodeableConcept = https://www.ehealth.fgov.be/standards/fhir/public-health/CodeSystem/be-cs-populationscreening-next-invitation-type#nextinvitation
+* extension[nextInvitation].extension[date].valueDateTime = "2024-12-24"
 * identifier.system = "http://example.org/sampleepisodeofcare-identifier"
 * identifier.value = "3237645"
 * status = #active

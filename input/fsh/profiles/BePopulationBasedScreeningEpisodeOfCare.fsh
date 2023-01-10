@@ -7,18 +7,20 @@ Description:    "Manages a recurring periodical workflow for diagnostics in rega
 * patient only Reference(BePatient)
 * patient 1..1
 * type from PopulationScreeningScreeningVS (extensible) 
-* extension contains PopulationScreeningNextInvitationIndicationDate named nextInvitationDate 0..1
-* extension contains PopulationScreeningNextInvitationIndication named nextInvitationIndication 1..1
+* extension contains PopulationScreeningNextInvitation named nextInvitation  1..1 MS
 
-Extension: PopulationScreeningNextInvitationIndicationDate
+Extension: PopulationScreeningNextInvitation
 Description: "The estimated date on which to expect the next invitation"
 * ^status = #draft
-* value[x] only date
+* extension contains 
+    type 1..1 MS and
+    date 0..1 MS
+* extension[type] ^short = "Indication for a new invitation"
+* extension[type].value[x] only CodeableConcept
+* extension[type].valueCodeableConcept from BeVSPopulationScreeningNextInvitationType (required)
+* extension[date] ^short = "(partial) date for next invitation"
+* extension[date].value[x] only dateTime
 
-Extension: PopulationScreeningNextInvitationIndication
-Description: "This is variable text giving an estimate when the next screening is scheduled, if there is any and why."
-* ^status = #draft
-* value[x] only string
 
 Extension: BePopulationScreeningEpisodeOfCare
 //Parent: workflow-episodeOfCare
@@ -52,8 +54,8 @@ Usage: #example
 * period.start = "2014-09-01"
 * type = $sct#762444001
 * type.text = "Dikkedarmkanker"
-* extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/PopulationScreeningNextInvitationIndication"
-* extension.valueString = "De datum van volgende uitnodiging is afhankelijk van de uitslag van het verdere onderzoek."
+* extension[nextInvitation].extension[type].valueCodeableConcept = https://www.ehealth.fgov.be/standards/fhir/public-health/CodeSystem/be-cs-populationscreening-next-invitation-type#tobedetermined
+
 
 
 Instance: exampleMaleBePatient

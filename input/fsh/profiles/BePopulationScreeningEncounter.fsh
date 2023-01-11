@@ -7,7 +7,7 @@ Description: "Encounter for screening - participation in population screening"
 * extension contains BePopulationScreeningEpisodeOfCare named Episode 1..1 MS
 
 Profile: BePopulationScreeningObservation
-Parent: Observation
+Parent: BeObservation
 Id: be-populationscreening-observation
 Title: "Be PopulationScreening Observation"
 Description: "Observation result of screening"
@@ -40,6 +40,7 @@ Title: "Positive Breast Cancer Result"
 Description: "Observation with positive/abnormal result"
 * status = #final
 * code = $sct#280415008
+* performer = Reference(Organization/CvKO)
 * encounter = Reference(BreastCancerEncounterExample)
 * extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/BePopulationScreeningEpisodeOfCare"
 * extension.valueReference = Reference(exampleEpisodePopulationScreening)

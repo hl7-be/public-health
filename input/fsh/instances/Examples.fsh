@@ -108,8 +108,8 @@ Usage: #example
 * extension.valueReference = Reference(BK-3-invitation-participation-negative-example-episode)
 * status = #final
 * performer = Reference(Organization/CvKO)
-* code = http://snomed.info/sct#280413001 "Niet afwijkend"
-* code.text = "Niet afwijkend"
+* valueCodeableConcept = http://snomed.info/sct#280413001 "Niet afwijkend"
+* code = http://snomed.info/sct#268547008
 * subject = Reference(Patient/JaneDoe)
 * encounter = Reference(BK-3-invitation-participation-negative-example-encounter)
 
@@ -156,8 +156,8 @@ Usage: #example
 * performer = Reference(Organization/CvKO)
 * extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/BePopulationScreeningEpisodeOfCare"
 * extension.valueReference = Reference(BK-4-participation-negative-example-episode)
-* code = http://snomed.info/sct#280413001 "Niet afwijkend"
-* code.text = "Niet afwijkend"
+* valueCodeableConcept = http://snomed.info/sct#280413001 "Niet afwijkend"
+* code = http://snomed.info/sct#268547008
 * subject = Reference(Patient/JaneDoe)
 * encounter = Reference(BK-4-participation-negative-example-encounter)
 
@@ -222,8 +222,8 @@ Usage: #example
 * performer = Reference(Organization/CvKO)
 * extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/BePopulationScreeningEpisodeOfCare"
 * extension.valueReference = Reference(BK-5-negative-example-episode)
-* code = http://snomed.info/sct#280413001 "Niet afwijkend"
-* code.text = "Niet afwijkend"
+* valueCodeableConcept = http://snomed.info/sct#280413001 "Niet afwijkend"
+* code = http://snomed.info/sct#268547008
 * subject = Reference(Patient/JaneDoe)
 * encounter = Reference(BK-5-negative-example-participation)
 
@@ -279,8 +279,8 @@ Usage: #example
 * performer = Reference(Organization/CvKO)
 * extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/BePopulationScreeningEpisodeOfCare"
 * extension.valueReference = Reference(BK-6-negative-example-episode)
-* code = http://snomed.info/sct#280413001 "Niet afwijkend"
-* code.text = "Niet afwijkend"
+* valueCodeableConcept = http://snomed.info/sct#280413001 "Niet afwijkend"
+* code = http://snomed.info/sct#268547008
 * subject = Reference(Patient/JaneDoe)
 * encounter = Reference(BK-6-negative-example-participation)
 

@@ -12,7 +12,9 @@ Id: be-populationscreening-observation
 Title: "Be PopulationScreening Observation"
 Description: "Observation result of screening"
 * ^status = #draft
-* code from BePopulationScreeningResultVS (extensible)
+* code from BeVSPopulationScreeningType (preferred)
+* valueCodeableConcept MS
+* valueCodeableConcept from BePopulationScreeningResultVS (preferred)
 * extension contains BePopulationScreeningEpisodeOfCare named Episode 1..1 MS
 
 Instance: BreastCancerEncounterExample

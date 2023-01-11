@@ -1,4 +1,4 @@
-@startuml transaction1
+@startuml
 title Send/Update Screening Information
 skinparam actorStyle awesome
 

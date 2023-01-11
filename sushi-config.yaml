@@ -188,6 +188,7 @@ FSHOnly: false
 
 dependencies: 
   hl7.fhir.be.core: 2.0.1
+  hl7.fhir.be.core-clinical: 1.0.0
 
 parameters:
   shownav: 'true'

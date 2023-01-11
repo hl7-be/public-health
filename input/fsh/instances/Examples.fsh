@@ -107,6 +107,7 @@ Usage: #example
 * extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/BePopulationScreeningEpisodeOfCare"
 * extension.valueReference = Reference(BK-3-invitation-participation-negative-example-episode)
 * status = #final
+* performer = Reference(Organization/CvKO)
 * code = http://snomed.info/sct#280413001 "Niet afwijkend"
 * code.text = "Niet afwijkend"
 * subject = Reference(Patient/JaneDoe)
@@ -152,6 +153,7 @@ Instance: BK-4-participation-negative-example-observation
 InstanceOf: BePopulationScreeningObservation
 Usage: #example
 * status = #final
+* performer = Reference(Organization/CvKO)
 * extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/BePopulationScreeningEpisodeOfCare"
 * extension.valueReference = Reference(BK-4-participation-negative-example-episode)
 * code = http://snomed.info/sct#280413001 "Niet afwijkend"
@@ -217,6 +219,7 @@ Instance: BK-5-negative-result
 InstanceOf: BePopulationScreeningObservation
 Usage: #example
 * status = #final
+* performer = Reference(Organization/CvKO)
 * extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/BePopulationScreeningEpisodeOfCare"
 * extension.valueReference = Reference(BK-5-negative-example-episode)
 * code = http://snomed.info/sct#280413001 "Niet afwijkend"
@@ -273,6 +276,7 @@ Instance: BK-6-negative-example-result
 InstanceOf: BePopulationScreeningObservation
 Usage: #example
 * status = #final
+* performer = Reference(Organization/CvKO)
 * extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/BePopulationScreeningEpisodeOfCare"
 * extension.valueReference = Reference(BK-6-negative-example-episode)
 * code = http://snomed.info/sct#280413001 "Niet afwijkend"

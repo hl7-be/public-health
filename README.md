@@ -5,7 +5,7 @@ This IG contains the Belgian profiles for Public Health related stuff such as Po
 <br> </br>
 ###
 # General
-For analysis purposes in search of the perfect implementation for PopulationScreeningen
+For analysis purposes in search of the perfect implementation for PopulationScreenings
 
 ## Publication
 This ImplementationGuide is published in the following locations:

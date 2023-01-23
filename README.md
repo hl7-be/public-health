@@ -27,6 +27,6 @@ Read/ install the following:
 Issues and change requests are managed here:  
 
 Issues:  __https://github.com/hl7-be/public-health/issues__  
-Kanban board:  __https://github.com/hl7-be/public-health/projects/1__  
+Kanban board:  __https://github.com/orgs/hl7-be/projects/9__  
 
 ### References

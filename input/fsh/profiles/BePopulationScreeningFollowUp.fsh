@@ -9,17 +9,17 @@ If the screening was negative, the follow up examination should not be performed
 * ^status = #draft
 * intent = #proposal (exactly)
 * subject only Reference(BePatient)
-* code from BeVSPopulationScreeningFollowUpAdvice (extensible)
-* bodySite from BeVSPopulationScreeningBodySiteLocation (extensible)
+* code from BeVSPopulationScreeningFollowUpAdvice (example)
+* bodySite from BeVSPopulationScreeningBodySiteLocation (example)
 * patientInstruction
 * occurrence[x]
-* extension contains BePopulationScreeningEpisodeOfCare named Episode 1..1 MS
+//* extension contains BePopulationScreeningEpisodeOfCare named Episode 1..1 MS
 
 ValueSet: BeVSPopulationScreeningFollowUpAdvice
 Title: "BeVSPopulationScreeningFollowUpAdvice"
 Description: "Possible follow up actions"
 * ^status = #draft
-* ^experimental = false
+* ^experimental = true
 * http://snomed.info/sct#73761001 "Colonoscopy"
 
 ValueSet: BeVSPopulationScreeningBodySiteLocation
@@ -42,8 +42,8 @@ Description: "Follow up after positive colorectal cancer screening"
 * patientInstruction = "Colonoscopie"
 * bodySite = http://snomed.info/sct#14742008
 * bodySite.text = "Dikke darm"
-* extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/BePopulationScreeningEpisodeOfCare"
-* extension.valueReference = Reference(exampleEpisodePopulationScreening)
+// * extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/BePopulationScreeningEpisodeOfCare"
+// * extension.valueReference = Reference(exampleEpisodePopulationScreening)
 
 Instance: BreastCancerScreeningFollowUpExample
 InstanceOf: BePopulationScreeningFollowUp
@@ -54,8 +54,8 @@ Description: "Follow up after positive breast cancer screening. This is a propos
 * status = #active
 * subject = Reference(JaneDoe)
 * patientInstruction = "Ga naar de arts die u hebt opgegeven bij het onderzoek, dit is uw huisarts of gynaecoloog of andere, voor een verwijsbrief voor bijkomend onderzoek."
-* extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/BePopulationScreeningEpisodeOfCare"
-* extension.valueReference = Reference(exampleEpisodePopulationScreening)
+// * extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/BePopulationScreeningEpisodeOfCare"
+// * extension.valueReference = Reference(exampleEpisodePopulationScreening)
 
 Instance: JaneDoe
 InstanceOf: BePatient

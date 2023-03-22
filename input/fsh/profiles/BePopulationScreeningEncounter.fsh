@@ -5,8 +5,8 @@ Title: "Be PopulationScreening Encounter"
 Description: "Encounter for screening - participation in population screening"
 * ^status = #draft
 * ^experimental = true
-//* extension contains BePopulationScreeningEpisodeOfCare named Episode 1..1 MS
-* code MS
+//* extension contains BePopulationScreeningEpisodeOfCare named Episode 1..1
+* type MS
 * subject 1..1 MS
 * period MS
 * location MS

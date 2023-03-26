@@ -8,6 +8,7 @@ If the screening was negative, the follow up examination should not be performed
 * ^purpose = "Notify the patient about possible follow up examinations/actions the patient can take."""
 * ^status = #draft
 * intent = #proposal (exactly)
+* identifier MS
 * subject only Reference(BePatient)
 * code from BeVSPopulationScreeningFollowUpAdvice (example)
 * bodySite from BeVSPopulationScreeningBodySiteLocation (example)

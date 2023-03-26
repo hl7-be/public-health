@@ -6,6 +6,7 @@ Description: "Encounter for screening - participation in population screening"
 * ^status = #draft
 * ^experimental = true
 //* extension contains BePopulationScreeningEpisodeOfCare named Episode 1..1
+* identifier MS
 * type MS
 * subject 1..1 MS
 * period MS
@@ -20,6 +21,7 @@ Title: "Be PopulationScreening Observation"
 Description: "Observation result of screening"
 * ^status = #draft
 * ^experimental = true
+* identifier MS
 * code from BeVSPopulationScreeningType (preferred)
 * valueCodeableConcept MS
 * valueCodeableConcept from BePopulationScreeningResultVS (preferred)

@@ -1,4 +1,4 @@
-Logical: BePopulationScreening
+Logical: BeModelPopulationScreening
 Parent: Element
 Title: "Logical model for population based screening"
 Description: "Logical model for recurrent population based screening. The model represents one iteration of a screening, called episode. A patient can have multiple episodes for a given screening. A screening of a specific type for a given patient can be repeated after a certain period. Each time the screening is repeated results in a new episode."

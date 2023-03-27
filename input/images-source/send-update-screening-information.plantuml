@@ -10,7 +10,7 @@ actor "**Screening**\n**Information**\n**Provider**" as SIP
 actor "**Screening**\n**Information**\n**Receiver**" as SIR
 
 |||
-SIP --> SIR : Send/Update Screening Information\n (Batch)
+SIP --> SIR : Submit Screening Information\n (Batch)
 activate SIR
 SIR --> SIP: Response 
 

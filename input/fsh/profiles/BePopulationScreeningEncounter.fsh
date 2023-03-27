@@ -22,6 +22,7 @@ Description: "Observation result of screening"
 * ^status = #draft
 * ^experimental = true
 * identifier MS
+* code MS
 * code from BeVSPopulationScreeningType (preferred)
 * valueCodeableConcept MS
 * valueCodeableConcept from BePopulationScreeningResultVS (preferred)

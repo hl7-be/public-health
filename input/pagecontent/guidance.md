@@ -1,5 +1,5 @@
 ### Data exchange
-The Public Health - Cancer Screening specification tracks the scheduling and performance of cancer screenings, including the outcome of such screenings and the request of next actions.
+The Public Health - Cancer Screening specification tracks the scheduling and performance of cancer screenings, including the results and eventual follow-up from such screenings.
 
 The scope of data is shown in the [logical model](StructureDefinition-BeModelPopulationScreening.html). The several data structures and their relationship to the model is shown in the diagram below:
 
@@ -25,7 +25,7 @@ All the resources used in the data exchange should use a business identifier. Th
 The resources needed to identify the screening event shall have a unique identifier: Appointment and Encounter. In addition, the overall grouping resource (e.g. CarePlan) shall have its unique identifier.
 
 
-### Informing patient and commnunicating next appointments
+### Informing patient and communicating next appointments
 The message that is to be sent to the patient may depend on the current screening date, the screening type, the results, and any other circumstances for the patient.
 While the input for creating such message is standardized, the content of such message is left for implementers. If the message is to be persisted as part of the overall Cancer Screening planning and execution, resources like Communication may be used for this purpose. 
 

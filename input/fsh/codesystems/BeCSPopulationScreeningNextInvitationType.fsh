@@ -33,8 +33,9 @@ Description: "Describes the type of the next invitation (or exclusion of next in
 // * ^concept[=].designation[=].value =  "Exclusion from invitation"
 // * ^concept[=].property[+].code = https://www.ehealth.fgov.be/standards/fhir/public-health/CodeSystem/be-cs-display-template#nl-BE
 // * ^concept[=].property[=].valueString = "Je ontvangt geen volgende uitnodiging meer."
-// * ^concept[+].code = #notintargetgroup
-// * ^concept[=].display = "Not part of target group. Invitations are from the year of your 50th birthday up to the year of your 69th birthday."
+
+* ^concept[+].code = #notintargetgroup
+* ^concept[=].display = "Not part of target group."
 // * ^concept[=].designation[+].language = #en
 // * ^concept[=].designation[=].value =  "Not part of target group. Invitations are from the year of your 50th birthday up to the year of your 69th birthday."
 // * ^concept[=].property[+].code = https://www.ehealth.fgov.be/standards/fhir/public-health/CodeSystem/be-cs-display-template#nl-BE

@@ -1,8 +1,8 @@
 Profile: BePopulationScreeningEncounter
 Parent: Encounter
 Id: be-populationscreening-encounter
-Title: "Be PopulationScreening Encounter"
-Description: "Encounter for screening - participation in population screening"
+Title: "Population Screening Encounter"
+Description: "Encounter Profile for screening - participation in population screening"
 * ^status = #draft
 * ^experimental = true
 //* extension contains BePopulationScreeningEpisodeOfCare named Episode 1..1
@@ -17,7 +17,7 @@ Description: "Encounter for screening - participation in population screening"
 Profile: BePopulationScreeningObservation
 Parent: BeObservation
 Id: be-populationscreening-observation
-Title: "Be PopulationScreening Observation"
+Title: "Population Screening Observation"
 Description: "Observation result of screening"
 * ^status = #draft
 * ^experimental = true
@@ -63,7 +63,7 @@ Alias: $sct = http://snomed.info/sct
 
 ValueSet: BePopulationScreeningResultVS
 Id: be-populationscreening-result-vs
-Title: "Be PopulationScreening Result VS"
+Title: "PopulationScreening Result Value Set"
 Description: "Result"
 * ^experimental = true
 * $sct#280415008 "Abnormal result"

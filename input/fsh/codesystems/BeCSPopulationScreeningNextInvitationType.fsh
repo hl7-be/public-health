@@ -1,7 +1,7 @@
 CodeSystem: BeCSPopulationScreeningNextInvitationType
 Id: be-cs-populationscreening-next-invitation-type
-Title: "BeCSPopulationScreeningNextInvitationType"
-Description: "Describes the type of the next invitation (or exclusion of next invitation)"
+Title: "Population Screening Next Invitation Type"
+Description: "Code System containing the codes for the type of the next invitation (or exclusion of next invitation)"
 * ^experimental = false
 * ^caseSensitive = true
 // * ^property[+].code = #nl-BE

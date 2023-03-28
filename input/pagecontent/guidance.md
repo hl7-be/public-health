@@ -19,6 +19,7 @@ The above resources are linked by a resource that describes the present screenin
 |**Composition**|Using a Composition that links to the resources| The Composition resource is used to establish a coherent view of the screening process and results. Unlike CarePlan, a Composition does not imply any functional meaning, ratther simply establishes a resource that contains links to other resources, like a [FHIR Document](https://hl7.org/fhir/R4/documents.html). Note that Composition can be used in addition to CarePlan.|
 |**Custom extensions**|Using additional resources and extensions to link the artifacts|It is possible to use other resources and extensions to link to/from the different resources, but this should be considered given the expected evolution of the screening guidance (extensions are normally purpose-specific).
 {:.table-bordered}
+<br/>
 
 #### Resource uniqueness
 All the resources used in the data exchange should use a business identifier. This business identifier can reside in the [namespace](https://hl7.org/fhir/R4/datatypes-definitions.html#Identifier.system) of the creator (cancer screening provider), and is used to establish the uniqueness of the content.

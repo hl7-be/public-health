@@ -23,6 +23,6 @@ If the patient has a refusal or exclusion registered and does not have a partici
   * followup 0..1 BackboneElement "Details of proposed actions for the patient after the screening concluded." "This data acts purely as info for the patient to inform the patient of proposed actions and should not be followed up by the screening authority."
     * needed 0..1 boolean "Indication if the patient should request or take other examinations/steps based on the outcome of the screening."
     * advice 0..1 string "Indication what other examinations/steps the patient should take."
-* nextInvitation 1..1 BackboneElement "This field gives a short human readable indication for the patient if the patient can excpect future invitations for the population based screening and an estimation when the next invitation will be created. If the patient will not receive future invitations for the screening, a short explanation will be given."
+* nextInvitation 1..1 BackboneElement "This field gives a short human readable indication for the patient if the patient can expect future invitations for the population based screening and an estimation when the next invitation will be created. If the patient will not receive future invitations for the screening, a short explanation will be given."
   * type 1..1 CodeableConcept "Type of the next invitation or lack of next invitation"
   * date 0..1 dateTime "(Partial) date of next invitation, if applicable"

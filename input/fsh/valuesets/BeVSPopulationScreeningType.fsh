@@ -1,6 +1,6 @@
 ValueSet: BeVSPopulationScreeningType
-Title: "BeVSPopulationScreeningType"
-Description: "Describes the type of screening"
+Title: "Population Screening Type Value Set"
+Description: "Value Set with the codes for the type of screening"
 Id: be-vs-populationscreening-type
 * ^status = #draft
 * ^experimental = true

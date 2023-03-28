@@ -1,8 +1,8 @@
 Profile: BePopulationScreeningAppointment
 Parent: Appointment
 Id: be-populationscreening-appointment
-Title: "Be PopulationScreening Appointment"
-Description: "Appointment for population screening"
+Title: "Population Screening Appointment"
+Description: "Appointment Profile for population screening"
 * ^status = #draft
 * ^experimental = true
 //* extension contains BePopulationScreeningEpisodeOfCare named Episode 1..1 MS

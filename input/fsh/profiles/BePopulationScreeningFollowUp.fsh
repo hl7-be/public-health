@@ -1,11 +1,12 @@
 Profile: BePopulationScreeningFollowUp
 Parent: ServiceRequest
 Id: be-populationscreening-follow-up
-Title: "Be PopulationScreening Follow Up"
-Description: """These are an indication which actions a patient can take next or which follow up examinations are proposed. This is a proposal. 
+Title: "PopulationScreening Follow Up"
+Description: """An indication of which actions a patient can take next, or which follow up examinations are proposed. This is a proposal. 
 This resource exists to notify the patient that the patient should request additional examinations if the result was positive. 
-If the screening was negative, the follow up examination should not be performed. In case of a negative result, the resource should not exist."
-* ^purpose = "Notify the patient about possible follow up examinations/actions the patient can take."""
+If the screening was negative, no follow up examination is expected - so no instance of this resource is expected.
+"""
+* ^purpose = "Notify the patient about possible follow up examinations/actions the patient can take."
 * ^status = #draft
 * intent = #proposal (exactly)
 * identifier MS
@@ -17,7 +18,7 @@ If the screening was negative, the follow up examination should not be performed
 //* extension contains BePopulationScreeningEpisodeOfCare named Episode 1..1 MS
 
 ValueSet: BeVSPopulationScreeningFollowUpAdvice
-Title: "BeVSPopulationScreeningFollowUpAdvice"
+Title: "Population Screening Follow-up Advice Value Set"
 Description: "Possible follow up actions"
 * ^status = #draft
 * ^experimental = true
@@ -25,10 +26,10 @@ Description: "Possible follow up actions"
 
 ValueSet: BeVSPopulationScreeningBodySiteLocation
 Id: be-vspopulationscreening-body-site-location
-Title: "Be VS PopulationScreening Body Site Location"
-Description: "Location on body"
+Title: "PopulationScreening Body Site Value Set"
+Description: "Body site or location on body"
 * ^status = #draft
-* ^experimental = false
+* ^experimental = true
 * http://snomed.info/sct#14742008 "Dikke darm"
 
 Instance: ColorectalCancerScreeningFollowUpExample

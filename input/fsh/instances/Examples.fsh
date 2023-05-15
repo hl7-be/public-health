@@ -250,7 +250,7 @@ Usage: #example
 * valueCodeableConcept = http://snomed.info/sct#280413001 "Niet afwijkend"
 * code = http://snomed.info/sct#268547008
 * subject = Reference(Patient/JaneDoe)
-* encounter = Reference(BK-5-negative-example-participation)
+* encounter = Reference(BK-5-example-participation)
 
 Instance: BK-5-example-advice-1
 InstanceOf: BePopulationScreeningFollowUp

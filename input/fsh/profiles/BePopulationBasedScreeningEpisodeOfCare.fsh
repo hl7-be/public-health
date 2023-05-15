@@ -61,6 +61,8 @@ Alias: $sct = http://snomed.info/sct
 
 Instance: exampleMaleBePatient
 InstanceOf: BePatient
+Title: "Male Patient"
+Description: "Male example patient"
 Usage: #example
 * identifier[SSIN].system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
 * identifier[SSIN].value = "12345"
@@ -70,6 +72,8 @@ Usage: #example
 
 Instance: CvKO
 InstanceOf: Organization
+Title: "Example Organization"
+Description: "Example Organization - Centrum voor Kankeropsporing"
 Usage: #example
 * name = "Centrum voor Kankeropsporing"
 * alias = "CvKO"

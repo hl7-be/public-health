@@ -5,7 +5,11 @@ Title: "PopulationScreening Plan"
 Description: """A longitudinal plan for a patient's screening activities.
 This resource exists to articulate the different activities as part of following a defined plan for certain populations."""
 
+* partOf MS 
 * identifier MS
+
+* category MS
+* author MS
 
 * category ^slicing.discriminator.type = #pattern
 * category ^slicing.discriminator.path = "coding.system"
@@ -23,7 +27,9 @@ This resource exists to articulate the different activities as part of following
   * detail.reasonReference MS
   * outcomeReference MS
   * detail.reasonReference only Reference(BeObservation)
-  * reference only Reference(BePopulationScreeningFollowUp or BePopulationScreeningAppointment)
+  * detail.reasonReference MS
+  * reference only Reference(BePopulationScreeningFollowUp or BePopulationScreeningAppointment) 
+  * reference MS
 
 Profile: BePopulationScreeningCommunication
 Parent: Communication
@@ -34,11 +40,12 @@ Description: """Communication following a patient's screening activities.
 
 * identifier MS
 
-* topic from BeVSPopulationScreeningNextInvitationType
+* topic from BeVSPopulationScreeningNextInvitationType 
+* topic MS
 
 * payload.contentAttachment MS
-* sender 1..1
-* recipient 1..*
+* sender 1..1 MS
+* recipient 1..* MS
 * about MS
 
 * category ^slicing.discriminator.type = #pattern
@@ -48,7 +55,7 @@ Description: """Communication following a patient's screening activities.
 
 
 
-* category contains cancerScreeningType 1..1
+* category contains cancerScreeningType 1..1 MS
 
 * category[cancerScreeningType].coding.system = Canonical(BeVSPopulationScreeningType)
 * category[cancerScreeningType] from BeVSPopulationScreeningType

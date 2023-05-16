@@ -10,6 +10,8 @@ If the screening was negative, no follow up examination is expected - so no inst
 * ^status = #draft
 * intent = #proposal (exactly)
 * identifier MS
+* intent and code and subject and bodySite and reasonReference MS
+
 * subject only Reference(BePatient)
 * code from BeVSPopulationScreeningFollowUpAdvice (example)
 * bodySite from BeVSPopulationScreeningBodySiteLocation (example)

@@ -32,7 +32,7 @@
 
 Instance: BK-2-invitation-example-invitation
 InstanceOf: BePopulationScreeningAppointment
-Title: "Example Invitation - Breast Cancer"
+Title: "[Example 2] Invitation - Breast Cancer"
 Description: "Example Invitation (instance of Appointment) for Breast Cancer screening"
 Usage: #example
 * contained.resourceType = "Location"
@@ -69,7 +69,7 @@ Usage: #example
 
 Instance: BK-3-invitation-participation-negative-example-appointment
 InstanceOf: BePopulationScreeningAppointment
-Title: "Example Invitation - Breast Cancer"
+Title: "[Example 3] Invitation - Breast Cancer"
 Description: "Example Invitation for Breast Cancer screening"
 
 Usage: #example
@@ -91,7 +91,7 @@ Usage: #example
 
 Instance: BK-3-invitation-participation-negative-example-encounter
 InstanceOf: BePopulationScreeningEncounter
-Title: "Example Encounter - Breast Cancer"
+Title: "[Example 3] Encounter - Breast Cancer"
 Description: "Example Encounter for Breast Cancer screening"
 Usage: #example
 * contained.resourceType = "Location"
@@ -111,7 +111,7 @@ Usage: #example
 
 Instance: BK-3-invitation-participation-negative-example-observation
 InstanceOf: BePopulationScreeningObservation
-Title: "Example Result - Breast Cancer - normal"
+Title: "[Example 3] Result - Breast Cancer - normal"
 Description: "Example Result for Breast Cancer screening - normal result i.e. screening negative"
 Usage: #example
 * language = #nl-BE
@@ -144,7 +144,7 @@ Usage: #example
 
 Instance: BK-4-participation-negative-example-encounter
 InstanceOf: BePopulationScreeningEncounter
-Title: "Example Encounter - Breast Cancer - normal"
+Title: "[Example 4] Encounter - Breast Cancer - normal"
 Description: "Example Encounter for Breast Cancer screening"
 Usage: #example
 //* language = #nl-BE
@@ -165,7 +165,7 @@ Usage: #example
 
 Instance: BK-4-participation-negative-example-observation
 InstanceOf: BePopulationScreeningObservation
-Title: "Example Result - Breast Cancer - normal"
+Title: "[Example 4] Result - Breast Cancer - normal"
 Description: "Example Result for Breast Cancer screening - normal result"
 Usage: #example
 //* language = #nl-BE
@@ -198,7 +198,7 @@ Usage: #example
 
 Instance: BK-5-example-invitation
 InstanceOf: BePopulationScreeningAppointment
-Title: "Example Invitation - Breast Cancer"
+Title: "[Example 5] Invitation - Breast Cancer"
 Description: "Example Invitation for Breast Cancer screening"
 Usage: #example
 //* language = #nl-BE
@@ -219,7 +219,7 @@ Usage: #example
 
 Instance: BK-5-example-participation
 InstanceOf: BePopulationScreeningEncounter
-Title: "Example Encounter - Breast Cancer"
+Title: "[Example 5] Encounter - Breast Cancer"
 Description: "Example Encounter for Breast Cancer screening"
 Usage: #example
 * contained.resourceType = "Location"
@@ -239,7 +239,7 @@ Usage: #example
 
 Instance: BK-5-result
 InstanceOf: BePopulationScreeningObservation
-Title: "Example Result - Breast Cancer"
+Title: "[Example 5] Result - Breast Cancer"
 Description: "Example Result for Breast Cancer screening"
 Usage: #example
 //* language = #nl-BE
@@ -247,14 +247,14 @@ Usage: #example
 * performer = Reference(Organization/CvKO)
 // * extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/BePopulationScreeningEpisodeOfCare"
 // * extension.valueReference = Reference(BK-5-negative-example-episode)
-* valueCodeableConcept = http://snomed.info/sct#280413001 "Niet afwijkend"
+* valueCodeableConcept = http://snomed.info/sct#280415008 "Abnormal result"
 * code = http://snomed.info/sct#268547008
 * subject = Reference(Patient/JaneDoe)
 * encounter = Reference(BK-5-example-participation)
 
 Instance: BK-5-example-advice-1
 InstanceOf: BePopulationScreeningFollowUp
-Title: "Example follow-up - Breast Cancer"
+Title: "[Example 5] follow-up - Breast Cancer"
 Description: "Example follow-up from Breast Cancer screening"
 Usage: #example
 * language = #nl-BE
@@ -284,7 +284,7 @@ Usage: #example
 
 Instance: BK-6-example-participation
 InstanceOf: BePopulationScreeningEncounter
-Title: "Example Encounter - Breast Cancer"
+Title: "[Example 6] Encounter - Breast Cancer"
 Description: "Example Encounter for Breast Cancer screening"
 Usage: #example
 * language = #nl-BE
@@ -305,21 +305,21 @@ Usage: #example
 
 Instance: BK-6-example-result
 InstanceOf: BePopulationScreeningObservation
-Title: "Example Result - Breast Cancer"
+Title: "[Example 6] Result - Breast Cancer"
 Description: "Example Result for Breast Cancer screening"
 Usage: #example
 * status = #final
 * performer = Reference(Organization/CvKO)
 // * extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/BePopulationScreeningEpisodeOfCare"
 // * extension.valueReference = Reference(BK-6-example-episode)
-* valueCodeableConcept = http://snomed.info/sct#280413001 "Niet afwijkend"
+* valueCodeableConcept = http://snomed.info/sct#280415008 "Abnormal result"
 * code = http://snomed.info/sct#268547008
 * subject = Reference(Patient/JaneDoe)
 * encounter = Reference(BK-6-example-participation)
 
 Instance: BK-6-example-advice
 InstanceOf: BePopulationScreeningFollowUp
-Title: "Example Follow-up - Breast Cancer"
+Title: "[Example 6] Follow-up - Breast Cancer"
 Description: "Example Follow-up for Breast Cancer screening"
 Usage: #example
 // * extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/BePopulationScreeningEpisodeOfCare"

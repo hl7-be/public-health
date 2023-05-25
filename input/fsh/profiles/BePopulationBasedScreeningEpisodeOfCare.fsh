@@ -10,18 +10,20 @@
 // * type from PopulationScreeningScreeningVS (extensible) 
 // * extension contains PopulationScreeningNextInvitation named nextInvitation  1..1 MS
 
+/*
 Extension: PopulationScreeningNextInvitation
 Description: "The estimated date on which to expect the next invitation"
 * ^status = #draft
 * extension contains 
     type 1..1 MS and
     date 0..1 MS
+
 * extension[type] ^short = "Indication for a new invitation"
 * extension[type].value[x] only CodeableConcept
 * extension[type].valueCodeableConcept from BeVSPopulationScreeningNextInvitationType (required)
 * extension[date] ^short = "(partial) date for next invitation"
 * extension[date].value[x] only dateTime
-
+*/
 
 // Extension: BePopulationScreeningEpisodeOfCare
 // //Parent: workflow-episodeOfCare

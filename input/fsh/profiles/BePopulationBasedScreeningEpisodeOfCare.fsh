@@ -36,6 +36,7 @@ InstanceOf: NamingSystem
 Usage: #definition
 Title: "cvko-id"
 Description: "Internal id for identification of resource with cvko"
+* extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 * status = #draft
 * name = "CVKONamingSystem"
 * kind = #identifier

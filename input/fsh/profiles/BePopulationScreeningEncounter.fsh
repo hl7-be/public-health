@@ -5,6 +5,7 @@ Title: "Population Screening Encounter"
 Description: "Encounter Profile for screening - participation in population screening"
 * ^status = #draft
 * ^experimental = true
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 //* extension contains BePopulationScreeningEpisodeOfCare named Episode 1..1
 * identifier MS
 * type MS
@@ -21,6 +22,7 @@ Title: "Population Screening Observation"
 Description: "Observation result of screening"
 * ^status = #draft
 * ^experimental = true
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 * identifier MS
 * code MS
 * code from BeVSPopulationScreeningType (preferred)
@@ -66,5 +68,6 @@ Id: be-populationscreening-result-vs
 Title: "PopulationScreening Result Value Set"
 Description: "Result"
 * ^experimental = true
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 * $sct#280415008 "Abnormal result"
 * $sct#280413001 "Normal result"

@@ -4,6 +4,7 @@ Title: "Population Screening Next Invitation Type"
 Description: "Code System containing the codes for the type of the next invitation (or exclusion of next invitation)"
 * ^experimental = false
 * ^caseSensitive = true
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 // * ^property[+].code = #nl-BE
 // * ^property[=].uri = "https://www.ehealth.fgov.be/standards/fhir/public-health/CodeSystem/be-cs-display-template"
 // * ^property[=].description = "Contains a text with placeholder for the date for display to the user in Dutch"

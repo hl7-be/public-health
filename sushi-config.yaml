@@ -13,7 +13,7 @@ url: https://www.ehealth.fgov.be/standards/fhir/public-health
 name: Public Health
 title: "HL7 FHIR Implementation Guide: Public Health IG Release 1 - BE Realm | STU1"
 description: Public Health
-status: draft
+status: active
 license: CC0-1.0
 date: 2022-10-07
 version: 1.0.0

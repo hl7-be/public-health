@@ -4,6 +4,7 @@ Id: be-populationscreening-plan
 Title: "PopulationScreening Plan"
 Description: """A longitudinal plan for a patient's screening activities.
 This resource exists to articulate the different activities as part of following a defined plan for certain populations."""
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 
 * partOf MS 
 * identifier MS
@@ -37,6 +38,7 @@ Id: be-populationscreening-communication
 Title: "PopulationScreening Communication"
 Description: """Communication following a patient's screening activities.
 """
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 
 * identifier MS
 

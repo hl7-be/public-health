@@ -6,6 +6,7 @@ Description: """An indication of which actions a patient can take next, or which
 This resource exists to notify the patient that the patient should request additional examinations if the result was positive. 
 If the screening was negative, no follow up examination is expected - so no instance of this resource is expected.
 """
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 * ^purpose = "Notify the patient about possible follow up examinations/actions the patient can take."
 * ^status = #draft
 * intent = #proposal (exactly)
@@ -24,6 +25,7 @@ Title: "Population Screening Follow-up Advice Value Set"
 Description: "Possible follow up actions"
 * ^status = #draft
 * ^experimental = true
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 * http://snomed.info/sct#73761001 "Colonoscopy"
 
 ValueSet: BeVSPopulationScreeningBodySiteLocation
@@ -32,6 +34,7 @@ Title: "PopulationScreening Body Site Value Set"
 Description: "Body site or location on body"
 * ^status = #draft
 * ^experimental = true
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 * http://snomed.info/sct#14742008 "Dikke darm"
 
 Instance: ColorectalCancerScreeningFollowUpExample

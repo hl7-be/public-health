@@ -4,6 +4,7 @@ Description: "Value Set with the codes for the type of screening"
 Id: be-vs-populationscreening-type
 * ^status = #draft
 * ^experimental = true
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 // * include http://snomed.info/sct#275978004
 // * include http://snomed.info/sct#268547008 
 // * include http://snomed.info/sct#171149006 

@@ -5,6 +5,7 @@ Title: "Population Screening Appointment"
 Description: "Appointment Profile for population screening"
 * ^status = #draft
 * ^experimental = true
+* ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 //* extension contains BePopulationScreeningEpisodeOfCare named Episode 1..1 MS
 * identifier MS
 * serviceType MS
@@ -36,6 +37,7 @@ InstanceOf: BePopulationScreeningAppointment
 Usage: #example
 Title: "Appointment Breast Cancer Screening"
 Description: "Appointment for mammography in a mammographic unit in context of breast cancer screening"
+
 * status = #booked
 * start = "2022-03-15T00:00:00.000+02:00"
 * end = "2022-03-15T23:59:00.000+02:00"

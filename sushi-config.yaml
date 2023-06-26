@@ -16,7 +16,7 @@ description: Public Health
 status: draft
 license: CC0-1.0
 date: 2022-10-07
-version: 0.0.1
+version: 1.0.0
 
 # Although fhirVersions is 0..* in the ImplementationGuide resource
 # it can be a single item OR and array here (but so far SUSHI only
@@ -202,3 +202,4 @@ parameters:
   apply-jurisdiction: 'true'
   apply-publisher: 'true'
   apply-version: 'true'
+  display-warnings: true

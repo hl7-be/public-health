@@ -16,7 +16,7 @@ description: Public Health
 status: draft
 license: CC0-1.0
 date: 2022-10-07
-version: 0.0.1
+version: 1.0.0
 
 # Although fhirVersions is 0..* in the ImplementationGuide resource
 # it can be a single item OR and array here (but so far SUSHI only
@@ -129,13 +129,13 @@ jurisdiction: urn:iso:std:iso:3166#BE "Belgium"
 # with supported extensions (e.g., .md/.xml) will be treated as
 # sub-pages.
 pages:
-  index.xml:
+  index.md:
     title: Home
-  guidance.md:
-  changes.xml:
-  downloads.xml:
-  actors.md:
-  transactions.md:
+  guidance.md: 
+  changes.xml: 
+  downloads.xml: 
+  actors.md: 
+  transactions.md: 
   
 # The ImplementationGuide resource defines several other properties
 # not represented above. These properties can be used as-is and
@@ -160,17 +160,18 @@ pages:
 # include a `menu.xml` file in input/includes.
 menu:
   Home: index.html
-  Guidance: guidance.html
+  Guidance: 
+    Overview: guidance.html
+    Actors: actors.html
+    Transactions: transactions.html  
   Artifacts:
+    Artifact Index: artifacts.html
     Profiles: artifacts.html#2
     Extensions: artifacts.html#3
     Value Sets: artifacts.html#4
-  Functional:
-    Actors: actors.html
-    Transactions: transactions.html  
   Downloads: downloads.html
   Changes: changes.html
-  History: https://www.ehealth.fgov.be/standards/fhir/allergy/history.html
+  History: https://www.ehealth.fgov.be/standards/fhir/public-health/history.html
 
 # The parameters property represents IG.definition.parameter. Rather
 # than a list of code/value pairs (as in the ImplementationGuide
@@ -201,3 +202,4 @@ parameters:
   apply-jurisdiction: 'true'
   apply-publisher: 'true'
   apply-version: 'true'
+  display-warnings: true

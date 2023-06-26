@@ -5,3 +5,6 @@ A screening information provider is an actor that has information about a partic
 ### Screening Information Receiver ###
 
 A screening information receiver is an actor that is able to process information about a particular screening. The receiver SHALL be able to communicate that it has received the information correctly. It MAY also be able to communicate that some information does not conform to its business rules.
+
+  
+<br/>

@@ -1,17 +1,18 @@
 @startuml
-title Send/Update Screening Information
+title Submit Screening Information\n
 skinparam actorStyle awesome
 
 hide footbox
 
 '!include ./style.iuml
 
-actor "**Screening Information Provider**" as SIP
-actor "**Screening Information Receiver**" as SIR
+actor "**Screening**\n**Information**\n**Provider**" as SIP
+actor "**Screening**\n**Information**\n**Receiver**" as SIR
 
-SIP --> SIR : Send/Update Screening Information\n (Batch)
+|||
+SIP --> SIR : Submit Screening Information\n (Batch)
 activate SIR
-SIR --> SIP: Feedback 
+SIR --> SIP: Response 
 
 
 @enduml

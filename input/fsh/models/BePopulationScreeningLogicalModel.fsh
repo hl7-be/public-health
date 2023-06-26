@@ -1,9 +1,9 @@
-Logical: BePopulationScreening
+Logical: BeModelPopulationScreening
 Parent: Element
-Title: "Logical model for population based screening"
+Title: "Logical model for population screening event"
 Description: "Logical model for recurrent population based screening. The model represents one iteration of a screening, called episode. A patient can have multiple episodes for a given screening. A screening of a specific type for a given patient can be repeated after a certain period. Each time the screening is repeated results in a new episode."
 
-* ^status = #draft
+* ^status = #active
 * patient 1..1 Reference(Patient) "The patient for the screening"
 * screeningType 1..1 CodeableConcept "The related screening" "The related screening, for example breast cancer, colon cancer or cervicalcancer."
 * screeningYear 1..1 string "The calendar year of the screening" """The year of the screening process/episode for the given screening. If the patient participated, the participation year is taken. If the patient didn't participate, the calendar year of the invitation is taken. 
@@ -23,6 +23,20 @@ If the patient has a refusal or exclusion registered and does not have a partici
   * followup 0..1 BackboneElement "Details of proposed actions for the patient after the screening concluded." "This data acts purely as info for the patient to inform the patient of proposed actions and should not be followed up by the screening authority."
     * needed 0..1 boolean "Indication if the patient should request or take other examinations/steps based on the outcome of the screening."
     * advice 0..1 string "Indication what other examinations/steps the patient should take."
-* nextInvitation 1..1 BackboneElement "This field gives a short human readable indication for the patient if the patient can excpect future invitations for the population based screening and an estimation when the next invitation will be created. If the patient will not receive future invitations for the screening, a short explanation will be given."
+    * request 0..1 string "The other examinations that the patient should take."
+* nextInvitation 1..1 BackboneElement "This field gives a short human readable indication for the patient if the patient can expect future invitations for the population based screening and an estimation when the next invitation will be created. If the patient will not receive future invitations for the screening, a short explanation will be given."
   * type 1..1 CodeableConcept "Type of the next invitation or lack of next invitation"
   * date 0..1 dateTime "(Partial) date of next invitation, if applicable"
+
+
+
+Logical: BeModelPopulationScreeningPlan
+Parent: Element
+Title: "Logical model for population screening plan"
+Description: "Logical model for recurrent population based screening. This model represents a screening plan for a patient for a given cancer type."
+
+* ^status = #active
+* patient 1..1 Reference(Patient) "The patient for the screening"
+* screeningType 1..1 CodeableConcept "The related screening" "The related screening, for example breast cancer, colon cancer or cervicalcancer."
+
+* screeningEpisode 0..* BeModelPopulationScreening "Each screening event - actual screening or missed scheduled screening"

@@ -59,7 +59,7 @@ Description: "Observation with positive/abnormal result"
 // * extension.valueReference = Reference(exampleEpisodePopulationScreening)
 
 
-Alias: $sct = http://snomed.info/sct
+
 
 ValueSet: BePopulationScreeningResultVS
 Id: be-populationscreening-result-vs

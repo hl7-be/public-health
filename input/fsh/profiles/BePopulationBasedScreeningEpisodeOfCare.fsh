@@ -44,7 +44,7 @@ Description: "Internal id for identification of resource with cvko"
 * uniqueId[=].value = "https://www.ehealth.fgov.be/standards/fhir/public-health/NamingSystem/cvkoId"
 * uniqueId[=].preferred = true
 
-Alias: $sct = http://snomed.info/sct|http://snomed.info/sct/11000172109
+
 
 // Instance: exampleEpisodePopulationScreening
 // InstanceOf: BePopulationBasedScreeningEpisodeOfCare

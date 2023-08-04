@@ -202,4 +202,5 @@ parameters:
   apply-jurisdiction: 'true'
   apply-publisher: 'true'
   apply-version: 'true'
+  propagate-status: true
   display-warnings: true

@@ -3,7 +3,7 @@ Parent: Appointment
 Id: be-populationscreening-appointment
 Title: "Population Screening Appointment"
 Description: "Appointment Profile for population screening"
-* ^status = #draft
+//* ^status = #draft
 * ^experimental = true
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 //* extension contains BePopulationScreeningEpisodeOfCare named Episode 1..1 MS

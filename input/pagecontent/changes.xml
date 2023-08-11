@@ -9,4 +9,11 @@
   <ul>
     <li><a href="https://github.com/hl7-be/public-health/releases/tag/v1.0.0">Release notes on GitHub</a></li>
   </ul>
+	<a name="1.0.1"> </a>
+	<p>
+		<b>2023-08-11 v1.0.1 - Public Health R1 (STU1)</b> based on FHIR R4
+  </p>
+  <ul>
+    <li><a href="https://github.com/hl7-be/public-health/releases/tag/v1.0.1">Release notes on GitHub</a></li>
+  </ul>
 </div>

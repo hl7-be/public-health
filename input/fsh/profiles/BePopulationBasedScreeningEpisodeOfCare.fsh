@@ -3,7 +3,7 @@
 // Id:             Be-PopulationScreening-EpisodeOfCare
 // Title:          "BE Episode PopulationScreening"
 // Description:    "Manages a recurring periodical workflow for diagnostics in regard to a specific Condition."
-// * ^status = #draft
+//// * ^status = #draft
 // * ^experimental = true
 // * patient only Reference(BePatient)
 // * patient 1..1
@@ -13,7 +13,7 @@
 /*
 Extension: PopulationScreeningNextInvitation
 Description: "The estimated date on which to expect the next invitation"
-* ^status = #draft
+//* ^status = #draft
 * extension contains 
     type 1..1 MS and
     date 0..1 MS
@@ -28,7 +28,7 @@ Description: "The estimated date on which to expect the next invitation"
 // Extension: BePopulationScreeningEpisodeOfCare
 // //Parent: workflow-episodeOfCare
 // Description: "A periodic episode for a population based screening"
-// * ^status = #draft
+//// * ^status = #draft
 // * value[x] only Reference(BePopulationBasedScreeningEpisodeOfCare)
 
 Instance: cvko-id
@@ -37,7 +37,7 @@ Usage: #definition
 Title: "cvko-id"
 Description: "Internal id for identification of resource with cvko"
 * extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
-* status = #draft
+* status = #active
 * name = "CVKONamingSystem"
 * kind = #identifier
 * date = "2022-06-08"
@@ -86,7 +86,7 @@ Usage: #example
 // Id: populationscreening-screening-vs
 // Title: "PopulationScreening Screening VS"
 // Description: "PopulationScreening screening types"
-// * ^status = #draft
+//// * ^status = #draft
 // * ^experimental = true
 // * $sct#268547008 "Screening for malignant neoplasm of breast (procedure)"
 // * $sct#275978004 "Screening for malignant neoplasm of colon" // 268548003 ??

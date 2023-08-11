@@ -8,7 +8,7 @@ If the screening was negative, no follow up examination is expected - so no inst
 """
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 * ^purpose = "Notify the patient about possible follow up examinations/actions the patient can take."
-* ^status = #draft
+//* ^status = #draft
 * intent = #proposal (exactly)
 * identifier MS
 * intent and code and subject and bodySite and reasonReference MS
@@ -23,7 +23,7 @@ If the screening was negative, no follow up examination is expected - so no inst
 ValueSet: BeVSPopulationScreeningFollowUpAdvice
 Title: "Population Screening Follow-up Advice Value Set"
 Description: "Possible follow up actions"
-* ^status = #draft
+//* ^status = #draft
 * ^experimental = true
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 * http://snomed.info/sct#73761001 "Colonoscopy"
@@ -32,7 +32,7 @@ ValueSet: BeVSPopulationScreeningBodySiteLocation
 Id: be-vspopulationscreening-body-site-location
 Title: "PopulationScreening Body Site Value Set"
 Description: "Body site or location on body"
-* ^status = #draft
+//* ^status = #draft
 * ^experimental = true
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 * http://snomed.info/sct#14742008 "Dikke darm"

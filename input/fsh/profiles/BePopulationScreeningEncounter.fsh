@@ -3,7 +3,7 @@ Parent: Encounter
 Id: be-populationscreening-encounter
 Title: "Population Screening Encounter"
 Description: "Encounter Profile for screening - participation in population screening"
-* ^status = #draft
+//* ^status = #draft
 * ^experimental = true
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 //* extension contains BePopulationScreeningEpisodeOfCare named Episode 1..1
@@ -20,7 +20,7 @@ Parent: BeObservation
 Id: be-populationscreening-observation
 Title: "Population Screening Observation"
 Description: "Observation result of screening"
-* ^status = #draft
+//* ^status = #draft
 * ^experimental = true
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 * identifier MS

@@ -19,7 +19,7 @@ This resource exists to articulate the different activities as part of following
 
 * category contains cancerScreeningType 1..1
 
-* category[cancerScreeningType].coding.system = Canonical(BeVSPopulationScreeningType)
+* category[cancerScreeningType].coding.system = "http://snomed.info/sct"
 * category[cancerScreeningType] from BeVSPopulationScreeningType
 * subject only Reference(BePatient)
 * author 1..1
@@ -59,5 +59,5 @@ Description: """Communication following a patient's screening activities.
 
 * category contains cancerScreeningType 1..1 MS
 
-* category[cancerScreeningType].coding.system = Canonical(BeVSPopulationScreeningType)
+* category[cancerScreeningType].coding.system = "http://snomed.info/sct"
 * category[cancerScreeningType] from BeVSPopulationScreeningType

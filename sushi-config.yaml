@@ -15,8 +15,8 @@ title: "HL7 FHIR Implementation Guide: Public Health IG Release 1 - BE Realm | S
 description: Public Health
 status: active
 license: CC0-1.0
-date: 2023-08-11
-version: 1.0.1
+date: 2023-10-20
+version: 1.0.2
 
 # Although fhirVersions is 0..* in the ImplementationGuide resource
 # it can be a single item OR and array here (but so far SUSHI only

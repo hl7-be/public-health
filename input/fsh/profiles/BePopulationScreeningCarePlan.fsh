@@ -49,6 +49,7 @@ Description: """Communication following a patient's screening activities.
 * sender 1..1 MS
 * recipient 1..* MS
 * about MS
+* subject 1..1 MS
 
 * category ^slicing.discriminator.type = #pattern
 * category ^slicing.discriminator.path = "coding.system"

@@ -8,10 +8,8 @@ Description: "Appointment Profile for population screening"
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 //* extension contains BePopulationScreeningEpisodeOfCare named Episode 1..1 MS
 * identifier MS
-* serviceType MS
-* serviceCategory MS
-* reasonCode MS
 * start MS
+* end MS
 
 
 * participant ^slicing.discriminator.type = #type

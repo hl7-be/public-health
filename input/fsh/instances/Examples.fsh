@@ -263,7 +263,7 @@ Usage: #example
 * status = #active
 * intent = #proposal
 * subject = Reference(Patient/JaneDoe)
-* patientInstruction = "Ga naar de arts die u hebt opgegeven bij het onderzoek, dit is uw huisarts of gynaecoloog of andere, voor een verwijsbrief voor bijkomend onderzoek."
+
 
 
 // Instance: BK-6-example-episode
@@ -327,4 +327,3 @@ Usage: #example
 * status = #active
 * intent = #proposal
 * subject = Reference(Patient/JaneDoe)
-* patientInstruction = "Ga naar de arts die u hebt opgegeven bij het onderzoek, dit is uw huisarts of gynaecoloog of andere, voor een verwijsbrief voor bijkomend onderzoek."

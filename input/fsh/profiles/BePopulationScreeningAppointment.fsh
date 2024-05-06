@@ -10,6 +10,7 @@ Description: "Appointment Profile for population screening"
 * identifier MS
 * start MS
 * end MS
+  * ^short = "Because of the international resource, end is required, but it can be equal to start."
 
 * participant.actor.type 1..1
 

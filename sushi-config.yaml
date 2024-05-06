@@ -165,10 +165,14 @@ menu:
     Actors: actors.html
     Transactions: transactions.html  
   Artifacts:
-    Artifact Index: artifacts.html
-    Profiles: artifacts.html#2
-    Extensions: artifacts.html#3
-    Value Sets: artifacts.html#4
+    Logical Models: artifacts.html#structures-logical-models
+    Profiles: artifacts.html#structures-resource-profiles
+    #Data Types: artifacts.html#structures-data-type-profiles
+    #Extensions: artifacts.html#structures-extension-definitions
+    Value Sets: artifacts.html#terminology-value-sets
+    Code Systems: artifacts.html#terminology-code-systems
+    Naming Systems: artifacts.html#terminology-naming-systems
+    Examples: artifacts.html#example-example-instances
   Downloads: downloads.html
   Changes: changes.html
   History: https://www.ehealth.fgov.be/standards/fhir/public-health/history.html
@@ -195,6 +199,7 @@ FSHOnly: false
 dependencies: 
   hl7.fhir.be.core: 2.0.1
   hl7.fhir.be.core-clinical: 1.0.0
+  hl7.fhir.be.infsec: 1.1.0
 
 parameters:
   shownav: 'true'
@@ -204,3 +209,8 @@ parameters:
   apply-version: 'true'
   propagate-status: true
   display-warnings: true
+
+resources:
+  Appointment/example-with-pseudonymization:
+    name: "[Example 7] Pseudonymized patient"
+    description: Appointment with pseudonymized patient

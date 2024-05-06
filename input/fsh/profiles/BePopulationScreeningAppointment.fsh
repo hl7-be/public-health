@@ -11,9 +11,11 @@ Description: "Appointment Profile for population screening"
 * start MS
 * end MS
 
+* participant.actor.type 1..1
 
-* participant ^slicing.discriminator.type = #type
-* participant ^slicing.discriminator.path = "actor.resolve()"
+
+* participant ^slicing.discriminator.type = #value
+* participant ^slicing.discriminator.path = "actor.type"
 * participant ^slicing.rules = #open
 * participant ^slicing.description = "Type of participant"
 
@@ -24,7 +26,8 @@ Description: "Appointment Profile for population screening"
 
 * participant[patient].actor only Reference(BePatient)
 * participant[location].actor only Reference(Location)
-//* participant[patient].type = #Patient
+* participant[location].actor.type = #Location
+* participant[patient].actor.type = #Patient
 
 * participant[patient] MS
 * participant[location] MS
@@ -43,6 +46,8 @@ Description: "Appointment for mammography in a mammographic unit in context of b
 * participant[patient].status = #tentative
 * participant[location].actor = Reference(mammographicUnit)
 * participant[location].status = #accepted
+* participant[patient].actor.type = #Patient
+* participant[location].actor.type = #Location
 //* extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/BePopulationScreeningEpisodeOfCare"
 //* extension.valueReference = Reference(exampleEpisodePopulationScreening)
 * contained[0] = mammographicUnit
@@ -57,6 +62,7 @@ Description: "Appointment for stool sample in context of colon cancer screening"
 * end = "2022-03-15T23:59:00.000+02:00"
 * participant[patient].actor = Reference(JaneDoe)
 * participant[patient].status = #tentative
+* participant[patient].actor.type = #Patient
 // * extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/BePopulationScreeningEpisodeOfCare"
 // * extension.valueReference = Reference(exampleEpisodePopulationScreening)
 
@@ -72,5 +78,6 @@ Description: "Proposed appointment in context of cervical cancer screening"
 * end = "2022-03-15T23:59:00.000+02:00"
 * participant[patient].actor = Reference(JaneDoe)
 * participant[patient].status = #tentative
+* participant[patient].actor.type = #Patient
 // * extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/BePopulationScreeningEpisodeOfCare"
 // * extension.valueReference = Reference(exampleEpisodePopulationScreening)

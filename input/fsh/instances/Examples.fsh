@@ -49,6 +49,8 @@ Usage: #example
 * participant[patient].status = #tentative
 * participant[location].actor = Reference(Location/1)
 * participant[location].status = #accepted
+* participant[patient].actor.type = #Patient
+* participant[location].actor.type = #Location
 
 
 // Instance: BK-3-invitation-participation-negative-example-episode
@@ -85,9 +87,11 @@ Usage: #example
 * start = "2021-04-08T00:00:00.000+02:00"
 * end = "2021-04-08T23:59:00.000+02:00"
 * participant[patient].actor = Reference(Patient/JaneDoe)
+* participant[patient].actor.type = #Patient
 * participant[patient].status = #tentative
 * participant[location].actor = Reference(Location/1)
 * participant[location].status = #accepted
+* participant[location].actor.type = #Location
 
 Instance: BK-3-invitation-participation-negative-example-encounter
 InstanceOf: BePopulationScreeningEncounter
@@ -216,6 +220,8 @@ Usage: #example
 * participant[patient].status = #tentative
 * participant[location].actor = Reference(Location/1)
 * participant[location].status = #accepted
+* participant[patient].actor.type = #Patient
+* participant[location].actor.type = #Location
 
 Instance: BK-5-example-participation
 InstanceOf: BePopulationScreeningEncounter

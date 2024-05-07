@@ -10,7 +10,8 @@ Description: "Appointment Profile for population screening"
 * identifier MS
 * start MS
 * end MS
-  * ^short = "Because of the international resource, end is required, but it can be equal to start."
+  * ^short = "The end of the appointment period. See full description and comments for details."
+  * ^comment = "This is subject to an invariant on the base resource, which is not relevant in the case of Belgian Population Health (CvKO). In that situation, start and and date may be the same."
 
 * participant.actor.type 1..1
 

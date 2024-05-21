@@ -8,10 +8,10 @@ Description: "Appointment Profile for population screening"
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 //* extension contains BePopulationScreeningEpisodeOfCare named Episode 1..1 MS
 * identifier MS
-* start MS
+* start 1..1 MS
 * end MS
   * ^short = "The end of the appointment period. See full description and comments for details."
-  * ^comment = "This is subject to an invariant on the base resource, which is not relevant in the case of Belgian Population Health (CvKO). In that situation, start and and date may be the same."
+  * ^comment = "This is subject to an invariant on the base resource, which is not relevant in the case of Belgian Population Health (CvKO). In that situation, start and and date are the same."
 
 * participant.actor.type 1..1
 

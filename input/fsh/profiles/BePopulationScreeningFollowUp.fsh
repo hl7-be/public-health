@@ -64,16 +64,16 @@ Description: "Follow up after positive colorectal cancer screening"
 // * extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/BePopulationScreeningEpisodeOfCare"
 // * extension.valueReference = Reference(exampleEpisodePopulationScreening)
 
-Instance: BreastCancerScreeningFollowUpExample
-InstanceOf: BePopulationScreeningFollowUp
-Usage: #example
-Title: "Breast Cancer Screening Follow Up Example"
-Description: "Follow up after positive breast cancer screening. This is a proposal. This resource exists to notify the patient that the patient should request additional examinations."
-* intent = #proposal
-* status = #active
-* subject = Reference(JaneDoe)
-// * extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/BePopulationScreeningEpisodeOfCare"
-// * extension.valueReference = Reference(exampleEpisodePopulationScreening)
+//Instance: BreastCancerScreeningFollowUpExample
+//InstanceOf: BePopulationScreeningFollowUp
+//Usage: #example
+//Title: "Breast Cancer Screening Follow Up Example"
+//Description: "Follow up after positive breast cancer screening. This is a proposal. This resource exists to notify the patient that the patient should request additional examinations."
+//* intent = #proposal
+//* status = #active
+//* subject = Reference(JaneDoe)
+// // * extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/BePopulationScreeningEpisodeOfCare"
+// // * extension.valueReference = Reference(exampleEpisodePopulationScreening)
 
 Instance: JaneDoe
 InstanceOf: BePatient

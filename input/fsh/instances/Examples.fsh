@@ -258,17 +258,17 @@ Usage: #example
 * subject = Reference(Patient/JaneDoe)
 * encounter = Reference(BK-5-example-participation)
 
-Instance: BK-5-example-advice-1
-InstanceOf: BePopulationScreeningFollowUp
-Title: "[Example 5] follow-up - Breast Cancer"
-Description: "Example follow-up from Breast Cancer screening"
-Usage: #example
-* language = #nl-BE
-// * extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/BePopulationScreeningEpisodeOfCare"
-// * extension.valueReference = Reference(BK-5-negative-example-episode)
-* status = #active
-* intent = #proposal
-* subject = Reference(Patient/JaneDoe)
+//Instance: BK-5-example-advice-1
+//InstanceOf: BePopulationScreeningFollowUp
+//Title: "[Example 5] follow-up - Breast Cancer"
+//Description: "Example follow-up from Breast Cancer screening"
+//Usage: #example
+//* language = #nl-BE
+// // * extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/BePopulationScreeningEpisodeOfCare"
+// // * extension.valueReference = Reference(BK-5-negative-example-episode)
+//* status = #active
+//* intent = #proposal
+//* subject = Reference(Patient/JaneDoe)
 
 
 
@@ -323,13 +323,13 @@ Usage: #example
 * subject = Reference(Patient/JaneDoe)
 * encounter = Reference(BK-6-example-participation)
 
-Instance: BK-6-example-advice
-InstanceOf: BePopulationScreeningFollowUp
-Title: "[Example 6] Follow-up - Breast Cancer"
-Description: "Example Follow-up for Breast Cancer screening"
-Usage: #example
-// * extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/BePopulationScreeningEpisodeOfCare"
-// * extension.valueReference = Reference(BK-6-example-episode)
-* status = #active
-* intent = #proposal
-* subject = Reference(Patient/JaneDoe)
+//Instance: BK-6-example-advice
+//InstanceOf: BePopulationScreeningFollowUp
+//Title: "[Example 6] Follow-up - Breast Cancer"
+//Description: "Example Follow-up for Breast Cancer screening"
+//Usage: #example
+// // * extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/BePopulationScreeningEpisodeOfCare"
+// // * extension.valueReference = Reference(BK-6-example-episode)
+//* status = #active
+//* intent = #proposal
+//* subject = Reference(Patient/JaneDoe)

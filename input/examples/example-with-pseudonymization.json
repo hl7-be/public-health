@@ -1,0 +1,57 @@
+{
+    "resourceType": "Appointment",
+    "id": "example-with-pseudonymization",
+    "meta": {
+      "profile": [
+        "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/be-populationscreening-appointment"
+      ]
+    },
+    "contained": [
+      {
+        "resourceType": "Location",
+        "id": "1",
+        "name": "AZ Jan Palfijn Gent",
+        "address": {
+          "text": "HENRI DUNANTLAAN 5, 9000 GENT",
+          "line": [
+            "HENRI DUNANTLAAN 5, 9000 GENT"
+          ]
+        }
+      }
+    ],
+    "status": "booked",
+    "start": "2021-04-08T00:00:00.000+02:00",
+    "end": "2021-04-08T23:59:00.000+02:00",
+    "participant": [
+      {
+        "actor": {
+            "type": "Patient",
+            "identifier": {
+                "system": "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin",
+                "value": "{{patient1_ssin_encoded}}",
+                "_value": {
+                    "extension": [
+                        {
+                            "extension": [
+                                {
+                                    "url": "marker",
+                                    "valueBoolean": true
+                                }
+                            ],
+                            "url": "https://www.ehealth.fgov.be/standards/fhir/infsec/StructureDefinition/be-ext-pseudonymization"
+                        }
+                    ]
+                }
+            }
+        },
+        "status": "tentative"
+      },
+      {
+        "actor": {
+          "type": "Location",
+          "reference": "#1"
+        },
+        "status": "accepted"
+      }
+    ]
+  }

@@ -8,12 +8,12 @@ Description: "Encounter Profile for screening - participation in population scre
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 //* extension contains BePopulationScreeningEpisodeOfCare named Episode 1..1
 * identifier MS
-* type MS
 * subject 1..1 MS
+* subject only Reference(BePatient)
 * period MS
 * location MS
 * appointment MS
-
+* appointment only Reference(BePopulationScreeningAppointment)
 
 Profile: BePopulationScreeningObservation
 Parent: BeObservation
@@ -28,6 +28,8 @@ Description: "Observation result of screening"
 * code from BeVSPopulationScreeningType (preferred)
 * valueCodeableConcept MS
 * valueCodeableConcept from BePopulationScreeningResultVS (preferred)
+* encounter MS
+* encounter only Reference(BePopulationScreeningEncounter)
 //* extension contains BePopulationScreeningEpisodeOfCare named Episode 1..1 MS
 
 Instance: BreastCancerEncounterExample
@@ -76,5 +78,6 @@ Description: "Result"
 *   The SNOMED International IPS Terminology is distributed by International Health Terminology Standards Development Organisation, trading as SNOMED International, and is subject the terms of the [Creative Commons Attribution 4.0 International Public License](https://creativecommons.org/licenses/by/4.0/). For more information, see [SNOMED IPS Terminology](https://www.snomed.org/snomed-ct/Other-SNOMED-products/international-patient-summary-terminology)
     
 *   The HL7 International IPS implementation guides incorporate SNOMED CT®, used by permission of the International Health Terminology Standards Development Organisation, trading as SNOMED International. SNOMED CT was originally created by the College of American Pathologists. SNOMED CT is a registered trademark of the International Health Terminology Standards Development Organisation, all rights reserved. Implementers of SNOMED CT should review [usage terms](https://www.snomed.org/get-snomed) or directly contact SNOMED International: info@snomed.org"""
+
 * $sct#280415008 "Abnormal result"
 * $sct#280413001 "Normal result"

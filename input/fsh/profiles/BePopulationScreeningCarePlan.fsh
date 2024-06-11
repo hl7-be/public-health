@@ -47,8 +47,11 @@ Description: """Communication following a patient's screening activities.
 
 * payload.contentAttachment MS
 * sender 1..1 MS
+* sender only Reference(BeOrganization)
 * recipient 1..* MS
+* recipient only Reference(BePatient)
 * about MS
+* subject 1..1 MS
 
 * category ^slicing.discriminator.type = #pattern
 * category ^slicing.discriminator.path = "coding.system"

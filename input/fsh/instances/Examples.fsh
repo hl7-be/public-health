@@ -49,6 +49,8 @@ Usage: #example
 * participant[patient].status = #tentative
 * participant[location].actor = Reference(Location/1)
 * participant[location].status = #accepted
+* participant[patient].actor.type = #Patient
+* participant[location].actor.type = #Location
 
 
 // Instance: BK-3-invitation-participation-negative-example-episode
@@ -85,9 +87,11 @@ Usage: #example
 * start = "2021-04-08T00:00:00.000+02:00"
 * end = "2021-04-08T23:59:00.000+02:00"
 * participant[patient].actor = Reference(Patient/JaneDoe)
+* participant[patient].actor.type = #Patient
 * participant[patient].status = #tentative
 * participant[location].actor = Reference(Location/1)
 * participant[location].status = #accepted
+* participant[location].actor.type = #Location
 
 Instance: BK-3-invitation-participation-negative-example-encounter
 InstanceOf: BePopulationScreeningEncounter
@@ -216,6 +220,8 @@ Usage: #example
 * participant[patient].status = #tentative
 * participant[location].actor = Reference(Location/1)
 * participant[location].status = #accepted
+* participant[patient].actor.type = #Patient
+* participant[location].actor.type = #Location
 
 Instance: BK-5-example-participation
 InstanceOf: BePopulationScreeningEncounter
@@ -252,18 +258,18 @@ Usage: #example
 * subject = Reference(Patient/JaneDoe)
 * encounter = Reference(BK-5-example-participation)
 
-Instance: BK-5-example-advice-1
-InstanceOf: BePopulationScreeningFollowUp
-Title: "[Example 5] follow-up - Breast Cancer"
-Description: "Example follow-up from Breast Cancer screening"
-Usage: #example
-* language = #nl-BE
-// * extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/BePopulationScreeningEpisodeOfCare"
-// * extension.valueReference = Reference(BK-5-negative-example-episode)
-* status = #active
-* intent = #proposal
-* subject = Reference(Patient/JaneDoe)
-* patientInstruction = "Ga naar de arts die u hebt opgegeven bij het onderzoek, dit is uw huisarts of gynaecoloog of andere, voor een verwijsbrief voor bijkomend onderzoek."
+//Instance: BK-5-example-advice-1
+//InstanceOf: BePopulationScreeningFollowUp
+//Title: "[Example 5] follow-up - Breast Cancer"
+//Description: "Example follow-up from Breast Cancer screening"
+//Usage: #example
+//* language = #nl-BE
+// // * extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/BePopulationScreeningEpisodeOfCare"
+// // * extension.valueReference = Reference(BK-5-negative-example-episode)
+//* status = #active
+//* intent = #proposal
+//* subject = Reference(Patient/JaneDoe)
+
 
 
 // Instance: BK-6-example-episode
@@ -317,14 +323,13 @@ Usage: #example
 * subject = Reference(Patient/JaneDoe)
 * encounter = Reference(BK-6-example-participation)
 
-Instance: BK-6-example-advice
-InstanceOf: BePopulationScreeningFollowUp
-Title: "[Example 6] Follow-up - Breast Cancer"
-Description: "Example Follow-up for Breast Cancer screening"
-Usage: #example
-// * extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/BePopulationScreeningEpisodeOfCare"
-// * extension.valueReference = Reference(BK-6-example-episode)
-* status = #active
-* intent = #proposal
-* subject = Reference(Patient/JaneDoe)
-* patientInstruction = "Ga naar de arts die u hebt opgegeven bij het onderzoek, dit is uw huisarts of gynaecoloog of andere, voor een verwijsbrief voor bijkomend onderzoek."
+//Instance: BK-6-example-advice
+//InstanceOf: BePopulationScreeningFollowUp
+//Title: "[Example 6] Follow-up - Breast Cancer"
+//Description: "Example Follow-up for Breast Cancer screening"
+//Usage: #example
+// // * extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/BePopulationScreeningEpisodeOfCare"
+// // * extension.valueReference = Reference(BK-6-example-episode)
+//* status = #active
+//* intent = #proposal
+//* subject = Reference(Patient/JaneDoe)

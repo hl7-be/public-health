@@ -8,14 +8,16 @@ Description: "Appointment Profile for population screening"
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
 //* extension contains BePopulationScreeningEpisodeOfCare named Episode 1..1 MS
 * identifier MS
-* serviceType MS
-* serviceCategory MS
-* reasonCode MS
-* start MS
+* start 1..1 MS
+* end MS
+  * ^short = "The end of the appointment period. See full description and comments for details."
+  * ^comment = "This is subject to an invariant on the base resource, which is not relevant in the case of Belgian Population Health (CvKO). In that situation, start and and date are the same."
+
+* participant.actor.type 1..1
 
 
-* participant ^slicing.discriminator.type = #type
-* participant ^slicing.discriminator.path = "actor.resolve()"
+* participant ^slicing.discriminator.type = #value
+* participant ^slicing.discriminator.path = "actor.type"
 * participant ^slicing.rules = #open
 * participant ^slicing.description = "Type of participant"
 
@@ -26,7 +28,8 @@ Description: "Appointment Profile for population screening"
 
 * participant[patient].actor only Reference(BePatient)
 * participant[location].actor only Reference(Location)
-//* participant[patient].type = #Patient
+* participant[location].actor.type = #Location
+* participant[patient].actor.type = #Patient
 
 * participant[patient] MS
 * participant[location] MS
@@ -45,6 +48,8 @@ Description: "Appointment for mammography in a mammographic unit in context of b
 * participant[patient].status = #tentative
 * participant[location].actor = Reference(mammographicUnit)
 * participant[location].status = #accepted
+* participant[patient].actor.type = #Patient
+* participant[location].actor.type = #Location
 //* extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/BePopulationScreeningEpisodeOfCare"
 //* extension.valueReference = Reference(exampleEpisodePopulationScreening)
 * contained[0] = mammographicUnit
@@ -59,6 +64,7 @@ Description: "Appointment for stool sample in context of colon cancer screening"
 * end = "2022-03-15T23:59:00.000+02:00"
 * participant[patient].actor = Reference(JaneDoe)
 * participant[patient].status = #tentative
+* participant[patient].actor.type = #Patient
 // * extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/BePopulationScreeningEpisodeOfCare"
 // * extension.valueReference = Reference(exampleEpisodePopulationScreening)
 
@@ -74,5 +80,6 @@ Description: "Proposed appointment in context of cervical cancer screening"
 * end = "2022-03-15T23:59:00.000+02:00"
 * participant[patient].actor = Reference(JaneDoe)
 * participant[patient].status = #tentative
+* participant[patient].actor.type = #Patient
 // * extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/BePopulationScreeningEpisodeOfCare"
 // * extension.valueReference = Reference(exampleEpisodePopulationScreening)

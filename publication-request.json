@@ -1,7 +1,7 @@
-﻿{
+{
   "package-id": "hl7.fhir.be.public-health",
-  "version": "1.0.2",
-  "path": "https://www.ehealth.fgov.be/standards/fhir/public-health/1.0.2",
+  "version": "1.0.3",
+  "path": "https://www.ehealth.fgov.be/standards/fhir/public-health/1.0.3",
   "milestone" : true,
   "status": "release",
   "sequence": "Trial Use",
@@ -11,7 +11,8 @@
   "ci-build" : "http://build.fhir.org/ig/hl7-be/public-health",
   "category": "National Base",
   "introduction": "eHealth FHIR Public Health Profiles for Belgium",
-"date": "2023-08-11",
-"mode": "milestone"   
+  "date": "2024-06-14",
+  "mode": "milestone",
+  "first": false   
 }
 

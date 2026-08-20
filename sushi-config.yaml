@@ -9,14 +9,14 @@
 
 id: hl7.fhir.be.public-health
 canonical: https://www.ehealth.fgov.be/standards/fhir/public-health
-url: https://www.ehealth.fgov.be/standards/fhir/public-health
+#url: https://www.ehealth.fgov.be/standards/fhir/public-health
 name: Public Health
 title: "HL7 FHIR Implementation Guide: Public Health IG Release 1 - BE Realm | STU1"
 description: Public Health
 status: active
 license: CC0-1.0
-date: 2026-08-10
-version: 1.1.0
+date: 2026-08-21
+version: 1.0.4
 
 # Although fhirVersions is 0..* in the ImplementationGuide resource
 # it can be a single item OR and array here (but so far SUSHI only

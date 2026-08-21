@@ -123,7 +123,7 @@ Usage: #example
 // * extension.valueReference = Reference(BK-3-invitation-participation-negative-example-episode)
 * status = #final
 * performer = Reference(Organization/CvKO)
-* valueCodeableConcept = http://snomed.info/sct#280413001 "Niet afwijkend"
+* valueCodeableConcept = http://snomed.info/sct#280413001 "Normal result"
 * code = http://snomed.info/sct#268547008
 * subject = Reference(Patient/JaneDoe)
 * encounter = Reference(BK-3-invitation-participation-negative-example-encounter)
@@ -177,7 +177,7 @@ Usage: #example
 * performer = Reference(Organization/CvKO)
 // * extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/BePopulationScreeningEpisodeOfCare"
 // * extension.valueReference = Reference(BK-4-participation-negative-example-episode)
-* valueCodeableConcept = http://snomed.info/sct#280413001 "Niet afwijkend"
+* valueCodeableConcept = http://snomed.info/sct#280413001 "Normal result"
 * code = http://snomed.info/sct#268547008
 * subject = Reference(Patient/JaneDoe)
 * encounter = Reference(BK-4-participation-negative-example-encounter)

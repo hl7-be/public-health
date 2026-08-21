@@ -197,8 +197,8 @@ FSHOnly: false
 #applyExtensionMetadataToRoot: false
 
 dependencies: 
-  hl7.fhir.be.core: 2.1.2
-  hl7.fhir.be.core-clinical: 1.2.0
+  hl7.fhir.be.core: 2.2.0
+  hl7.fhir.be.core-clinical: 1.3.0
   hl7.fhir.be.infsec: 1.3.0
 
 parameters:

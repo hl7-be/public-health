@@ -68,7 +68,7 @@ Title: "Male Patient"
 Description: "Male example patient"
 Usage: #example
 * identifier[SSIN].system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
-* identifier[SSIN].value = "12345"
+* identifier[SSIN].value = "01234567891"
 * name.family = "Jack"
 * name.given = "Bauer"
 * gender = #male

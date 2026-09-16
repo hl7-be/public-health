@@ -46,13 +46,13 @@ Description: "Appointment for mammography in a mammographic unit in context of b
 * end = "2022-03-15T23:59:00.000+02:00"
 * participant[patient].actor = Reference(JaneDoe)
 * participant[patient].status = #tentative
-* participant[location].actor = Reference(mammographicUnit)
+* participant[location].actor = Reference(MammographicUnitExample)
 * participant[location].status = #accepted
 * participant[patient].actor.type = #Patient
 * participant[location].actor.type = #Location
 //* extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/BePopulationScreeningEpisodeOfCare"
 //* extension.valueReference = Reference(exampleEpisodePopulationScreening)
-* contained[0] = mammographicUnit
+* contained[0] = MammographicUnitExample
 
 Instance: ColonCancerScreeningAppointment
 InstanceOf: BePopulationScreeningAppointment

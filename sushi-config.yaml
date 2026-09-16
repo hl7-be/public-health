@@ -209,6 +209,8 @@ parameters:
   apply-version: 'true'
   propagate-status: true
   display-warnings: true
+  excludettl: true
+  path-expansion-params: Parameters-terminology-expansion.json
 
 resources:
   Appointment/example-with-pseudonymization:

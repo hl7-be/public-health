@@ -1,4 +1,4 @@
-Instance: mammographicUnit
+Instance: MammographicUnitExample
 InstanceOf: Location
 Title: "Mammographic Unit"
 Description: "Location of a mammographic unit"

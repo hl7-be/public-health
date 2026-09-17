@@ -73,7 +73,6 @@ Instance: BK-3-invitation-participation-negative-example-appointment
 InstanceOf: BePopulationScreeningAppointment
 Title: "[Example 3] Invitation - Breast Cancer"
 Description: "Example Invitation for Breast Cancer screening"
-
 Usage: #example
 //* language = #nl-BE
 * contained.resourceType = "Location"
@@ -118,7 +117,7 @@ InstanceOf: BePopulationScreeningObservation
 Title: "[Example 3] Result - Breast Cancer - normal"
 Description: "Example Result for Breast Cancer screening - normal result i.e. screening negative"
 Usage: #example
-* language = #nl-BE
+* language = #en
 // * extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/BePopulationScreeningEpisodeOfCare"
 // * extension.valueReference = Reference(BK-3-invitation-participation-negative-example-episode)
 * status = #final

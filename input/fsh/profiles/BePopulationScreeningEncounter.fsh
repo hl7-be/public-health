@@ -43,9 +43,9 @@ Description: "Participation for breastcancer screening"
 //* episodeOfCare = Reference(exampleEpisodePopulationScreening)
 * appointment = Reference(BreastCancerScreeningAppointment)
 * period.start = "2022-03-15T11:30:00.000+02:00"
-* location.location = Reference(mammographicUnit)
+* location.location = Reference(MammographicUnitExample)
 * subject = Reference(JaneDoe)
-* contained[0] = mammographicUnit
+* contained[0] = MammographicUnitExample
 // * extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/BePopulationScreeningEpisodeOfCare"
 // * extension.valueReference = Reference(exampleEpisodePopulationScreening)
 

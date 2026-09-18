@@ -44,7 +44,7 @@ Description: "Appointment for mammography in a mammographic unit in context of b
 * status = #booked
 * start = "2022-03-15T00:00:00.000+02:00"
 * end = "2022-03-15T23:59:00.000+02:00"
-* participant[patient].actor = Reference(JaneDoe)
+* participant[patient].actor = Reference(FemalePatientExample)
 * participant[patient].status = #tentative
 * participant[location].actor = Reference(MammographicUnitExample)
 * participant[location].status = #accepted
@@ -62,7 +62,7 @@ Description: "Appointment for stool sample in context of colon cancer screening"
 * status = #booked
 * start = "2022-03-15T00:00:00.000+02:00"
 * end = "2022-03-15T23:59:00.000+02:00"
-* participant[patient].actor = Reference(JaneDoe)
+* participant[patient].actor = Reference(FemalePatientExample)
 * participant[patient].status = #tentative
 * participant[patient].actor.type = #Patient
 // * extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/BePopulationScreeningEpisodeOfCare"
@@ -78,7 +78,7 @@ Description: "Proposed appointment in context of cervical cancer screening"
 * status = #proposed
 * start = "2022-03-15T00:00:00.000+02:00"
 * end = "2022-03-15T23:59:00.000+02:00"
-* participant[patient].actor = Reference(JaneDoe)
+* participant[patient].actor = Reference(FemalePatientExample)
 * participant[patient].status = #tentative
 * participant[patient].actor.type = #Patient
 // * extension.url = "https://www.ehealth.fgov.be/standards/fhir/public-health/StructureDefinition/BePopulationScreeningEpisodeOfCare"

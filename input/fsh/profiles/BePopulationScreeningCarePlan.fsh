@@ -17,7 +17,7 @@ This resource exists to articulate the different activities as part of following
 * category ^slicing.rules = #open
 * category ^slicing.description = "Slice based on the type of code"
 
-* category contains cancerScreeningType 1..1
+* category contains cancerScreeningType 1..1 MS
 
 * category[cancerScreeningType].coding.system = "http://snomed.info/sct"
 * category[cancerScreeningType] from BeVSPopulationScreeningType

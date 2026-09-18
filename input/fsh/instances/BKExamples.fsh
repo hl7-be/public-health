@@ -122,6 +122,7 @@ Usage: #example
 // * extension.valueReference = Reference(BK-3-invitation-participation-negative-example-episode)
 * status = #final
 * performer = Reference(Organization/CvKO)
+* effectiveDateTime = "2021-07-17"
 * valueCodeableConcept = http://snomed.info/sct#280413001 "Normal result"
 * code = http://snomed.info/sct#268547008
 * subject = Reference(Patient/JaneDoe)
@@ -178,6 +179,7 @@ Usage: #example
 // * extension.valueReference = Reference(BK-4-participation-negative-example-episode)
 * valueCodeableConcept = http://snomed.info/sct#280413001 "Normal result"
 * code = http://snomed.info/sct#268547008
+* effectiveDateTime = "2021-07-17"
 * subject = Reference(Patient/JaneDoe)
 * encounter = Reference(BK-4-participation-negative-example-encounter)
 
@@ -254,6 +256,7 @@ Usage: #example
 // * extension.valueReference = Reference(BK-5-negative-example-episode)
 * valueCodeableConcept = http://snomed.info/sct#280415008 "Abnormal result"
 * code = http://snomed.info/sct#268547008
+* effectiveDateTime = "2021-07-17"
 * subject = Reference(Patient/JaneDoe)
 * encounter = Reference(BK-5-example-participation)
 
@@ -319,6 +322,7 @@ Usage: #example
 // * extension.valueReference = Reference(BK-6-example-episode)
 * valueCodeableConcept = http://snomed.info/sct#280415008 "Abnormal result"
 * code = http://snomed.info/sct#268547008
+* effectiveDateTime = "2021-07-17"
 * subject = Reference(Patient/JaneDoe)
 * encounter = Reference(BK-6-example-participation)
 

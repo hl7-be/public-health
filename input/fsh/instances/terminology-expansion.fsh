@@ -7,4 +7,4 @@ Description: "Parameters used to configure terminology expansion."
 * parameter[=].valueBoolean = true
 
 * parameter[+].name = "system-version"
-* parameter[=].valueUri = "http://snomed.info/sct|http://snomed.info/sct/11000172109"
+* parameter[=].valueCanonical = "http://snomed.info/sct|http://snomed.info/sct/11000172109"

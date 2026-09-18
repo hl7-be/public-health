@@ -9,7 +9,7 @@
 // * status = #active
 // * type = http://snomed.info/sct#268547008 "PopulationScreening borstkanker"
 // * type.text = "PopulationScreening borstkanker"
-// * patient = Reference(Patient/JaneDoe)
+// * patient = Reference(Patient/FemalePatientExample)
 // * managingOrganization = Reference(Organization/CvKO)
 // * period.start = "2020-04-08T00:00:00+02:00"
 
@@ -26,7 +26,7 @@
 // * status = #active
 // * type = http://snomed.info/sct#268547008 "PopulationScreening borstkanker"
 // * type.text = "PopulationScreening borstkanker"
-// * patient = Reference(Patient/JaneDoe)
+// * patient = Reference(Patient/FemalePatientExample)
 // * managingOrganization = Reference(Organization/CvKO)
 // * period.start = "2020-04-08T00:00:00+02:00"
 
@@ -45,7 +45,7 @@ Usage: #example
 * status = #booked
 * start = "2021-04-08T00:00:00.000+02:00"
 * end = "2021-04-08T23:59:00.000+02:00"
-* participant[patient].actor = Reference(JaneDoe)
+* participant[patient].actor = Reference(FemalePatientExample)
 * participant[patient].status = #tentative
 * participant[location].actor = Reference(Location/1)
 * participant[location].status = #accepted
@@ -65,7 +65,7 @@ Usage: #example
 // * status = #active
 // * type = http://snomed.info/sct#268547008 "PopulationScreening borstkanker"
 // * type.text = "PopulationScreening borstkanker"
-// * patient = Reference(Patient/JaneDoe)
+// * patient = Reference(Patient/FemalePatientExample)
 // * managingOrganization = Reference(Organization/CvKO)
 // * period.start = "2020-04-08T00:00:00+02:00"
 
@@ -85,7 +85,7 @@ Usage: #example
 * status = #booked
 * start = "2021-04-08T00:00:00.000+02:00"
 * end = "2021-04-08T23:59:00.000+02:00"
-* participant[patient].actor = Reference(Patient/JaneDoe)
+* participant[patient].actor = Reference(Patient/FemalePatientExample)
 * participant[patient].actor.type = #Patient
 * participant[patient].status = #tentative
 * participant[location].actor = Reference(Location/1)
@@ -106,7 +106,7 @@ Usage: #example
 // * extension.valueReference = Reference(BK-3-invitation-participation-negative-example-episode)
 * status = #finished
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB
-* subject = Reference(Patient/JaneDoe)
+* subject = Reference(Patient/FemalePatientExample)
 //* episodeOfCare = Reference(BK-3-invitation-participation-negative-example-episode)
 * period.start = "2021-07-17T00:00:00+02:00"
 * period.end = "2021-07-17T23:59:00+02:00"
@@ -125,7 +125,7 @@ Usage: #example
 * effectiveDateTime = "2021-07-17"
 * valueCodeableConcept = http://snomed.info/sct#280413001 "Normal result"
 * code = http://snomed.info/sct#268547008
-* subject = Reference(Patient/JaneDoe)
+* subject = Reference(Patient/FemalePatientExample)
 * encounter = Reference(BK-3-invitation-participation-negative-example-encounter)
 
 
@@ -142,7 +142,7 @@ Usage: #example
 // * status = #active
 // * type = http://snomed.info/sct#268547008 "PopulationScreening borstkanker"
 // * type.text = "PopulationScreening borstkanker"
-// * patient = Reference(Patient/JaneDoe)
+// * patient = Reference(Patient/FemalePatientExample)
 // * managingOrganization = Reference(Organization/CvKO)
 // * period.start = "2020-04-08T00:00:00+02:00"
 
@@ -161,7 +161,7 @@ Usage: #example
 // * extension.valueReference = Reference(BK-4-participation-negative-example-episode)
 * status = #finished
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB
-* subject = Reference(Patient/JaneDoe)
+* subject = Reference(Patient/FemalePatientExample)
 //* episodeOfCare = Reference(BK-4-participation-negative-example-episode)
 * period.start = "2021-07-17T00:00:00+02:00"
 * period.end = "2021-07-17T23:59:00+02:00"
@@ -180,7 +180,7 @@ Usage: #example
 * valueCodeableConcept = http://snomed.info/sct#280413001 "Normal result"
 * code = http://snomed.info/sct#268547008
 * effectiveDateTime = "2021-07-17"
-* subject = Reference(Patient/JaneDoe)
+* subject = Reference(Patient/FemalePatientExample)
 * encounter = Reference(BK-4-participation-negative-example-encounter)
 
 
@@ -197,7 +197,7 @@ Usage: #example
 // * status = #active
 // * type = http://snomed.info/sct#268547008 "PopulationScreening borstkanker"
 // * type.text = "PopulationScreening borstkanker"
-// * patient = Reference(Patient/JaneDoe)
+// * patient = Reference(Patient/FemalePatientExample)
 // * managingOrganization = Reference(Organization/CvKO)
 // * period.start = "2020-04-08T00:00:00+02:00"
 
@@ -217,7 +217,7 @@ Usage: #example
 * status = #booked
 * start = "2021-04-08T00:00:00.000+02:00"
 * end = "2021-04-08T23:59:00.000+02:00"
-* participant[patient].actor = Reference(Patient/JaneDoe)
+* participant[patient].actor = Reference(Patient/FemalePatientExample)
 * participant[patient].status = #tentative
 * participant[location].actor = Reference(Location/1)
 * participant[location].status = #accepted
@@ -238,7 +238,7 @@ Usage: #example
 // * extension.valueReference = Reference(BK-5-negative-example-episode)
 * status = #finished
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB
-* subject = Reference(Patient/JaneDoe)
+* subject = Reference(Patient/FemalePatientExample)
 //* episodeOfCare = Reference(BK-5-negative-example-episode)
 * period.start = "2021-07-17T00:00:00+02:00"
 * period.end = "2021-07-17T23:59:00+02:00"
@@ -257,7 +257,7 @@ Usage: #example
 * valueCodeableConcept = http://snomed.info/sct#280415008 "Abnormal result"
 * code = http://snomed.info/sct#268547008
 * effectiveDateTime = "2021-07-17"
-* subject = Reference(Patient/JaneDoe)
+* subject = Reference(Patient/FemalePatientExample)
 * encounter = Reference(BK-5-example-participation)
 
 //Instance: BK-5-example-advice-1
@@ -270,7 +270,7 @@ Usage: #example
 // // * extension.valueReference = Reference(BK-5-negative-example-episode)
 //* status = #active
 //* intent = #proposal
-//* subject = Reference(Patient/JaneDoe)
+//* subject = Reference(Patient/FemalePatientExample)
 
 
 
@@ -286,7 +286,7 @@ Usage: #example
 // * status = #active
 // * type = http://snomed.info/sct#268547008 "PopulationScreening borstkanker"
 // * type.text = "PopulationScreening borstkanker"
-// * patient = Reference(Patient/JaneDoe)
+// * patient = Reference(Patient/FemalePatientExample)
 // * managingOrganization = Reference(Organization/CvKO)
 // * period.start = "2020-04-08T00:00:00+02:00"
 
@@ -305,7 +305,7 @@ Usage: #example
 // * extension.valueReference = Reference(BK-6-example-episode)
 * status = #finished
 * class = http://terminology.hl7.org/CodeSystem/v3-ActCode#AMB
-* subject = Reference(Patient/JaneDoe)
+* subject = Reference(Patient/FemalePatientExample)
 //* episodeOfCare = Reference(BK-6-example-episode)
 * period.start = "2021-07-17T00:00:00+02:00"
 * period.end = "2021-07-17T23:59:00+02:00"
@@ -323,7 +323,7 @@ Usage: #example
 * valueCodeableConcept = http://snomed.info/sct#280415008 "Abnormal result"
 * code = http://snomed.info/sct#268547008
 * effectiveDateTime = "2021-07-17"
-* subject = Reference(Patient/JaneDoe)
+* subject = Reference(Patient/FemalePatientExample)
 * encounter = Reference(BK-6-example-participation)
 
 //Instance: BK-6-example-advice
@@ -335,4 +335,4 @@ Usage: #example
 // // * extension.valueReference = Reference(BK-6-example-episode)
 //* status = #active
 //* intent = #proposal
-//* subject = Reference(Patient/JaneDoe)
+//* subject = Reference(Patient/FemalePatientExample)

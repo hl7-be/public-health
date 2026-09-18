@@ -53,7 +53,7 @@ Description: "Internal id for identification of resource with cvko"
 // * status = #active
 // * identifier.system = "http://example.org/sampleepisodeofcare-identifier"
 // * identifier.value = "123"
-// * patient = Reference(exampleMaleBePatient)
+// * patient = Reference(MalePatientExample)
 // * managingOrganization = Reference(CvKO)
 // * period.start = "2014-09-01"
 // * type = $sct#762444001
@@ -62,16 +62,7 @@ Description: "Internal id for identification of resource with cvko"
 
 
 
-Instance: exampleMaleBePatient
-InstanceOf: BePatient
-Title: "Male Patient"
-Description: "Male example patient"
-Usage: #example
-* identifier[SSIN].system = "https://www.ehealth.fgov.be/standards/fhir/core/NamingSystem/ssin"
-* identifier[SSIN].value = "01234567891"
-* name.family = "Jack"
-* name.given = "Bauer"
-* gender = #male
+
 
 Instance: CvKO
 InstanceOf: Organization

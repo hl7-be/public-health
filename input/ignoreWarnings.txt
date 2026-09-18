@@ -4,4 +4,4 @@
 # (And include comments like this justifying why)
 
 # No examples were provided
-#WARNING: The Implementation Guide contains no examples for this profile
+The Implementation Guide contains no examples for this profile

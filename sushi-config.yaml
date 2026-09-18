@@ -203,6 +203,8 @@ parameters:
   display-warnings: true
   excludettl: true
   path-expansion-params: Parameters-terminology-expansion.json
+  pin-canonicals: pin-multiples
+  auto-oid-root: 2.16.840.1.113883.4.642.40.200.8
 
 resources:
   Appointment/example-with-pseudonymization:

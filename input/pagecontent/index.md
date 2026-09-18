@@ -29,18 +29,6 @@ This IG depends on the following packages:
 
 ---
 
-### Global Profiles
-
-{% include globals-table.xhtml %}
-
----
-
-### Expansion Parameters
-
-{% include expansion-params.xhtml %}
-
----
-
 ### Intellectual Property Considerations
 
 {% lang-fragment ip-statements.xhtml %}

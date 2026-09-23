@@ -1,7 +1,7 @@
-ValueSet: BeVSPopulationScreeningNextInvitationType
-Title: "Population Screening Next Invitation Type ValueSet"
-Description: "Value Set containing the codes for the type of the next invitation (or exclusion of next invitation)"
-Id: be-vs-populationscreening-next-invitation-type
+ValueSet: BeVSPopulationScreeningFollowUpAdvice
+Title: "Population Screening Follow-up Advice Value Set"
+Description: "Possible follow up actions"
+//* ^status = #draft
 * ^copyright = """
     
 *      This value set includes content from SNOMED CT, which is copyright © 2002+ International Health Terminology Standards Development Organisation (IHTSDO), and distributed by agreement between IHTSDO and HL7. Implementer use of SNOMED CT is not covered by this agreement
@@ -11,4 +11,4 @@ Id: be-vs-populationscreening-next-invitation-type
 *   The HL7 International IPS implementation guides incorporate SNOMED CT®, used by permission of the International Health Terminology Standards Development Organisation, trading as SNOMED International. SNOMED CT was originally created by the College of American Pathologists. SNOMED CT is a registered trademark of the International Health Terminology Standards Development Organisation, all rights reserved. Implementers of SNOMED CT should review [usage terms](https://www.snomed.org/get-snomed) or directly contact SNOMED International: info@snomed.org"""
 * ^experimental = false
 * ^extension[http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm].valueInteger = 1
-* include codes from system BeCSPopulationScreeningNextInvitationType
+* $sct#73761001
